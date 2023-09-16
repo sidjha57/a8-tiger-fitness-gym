@@ -6,6 +6,7 @@ import { SlideColorBox } from "@/components/SlideColorBox";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { CallOption } from "@/components/CallOption";
 // import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +27,7 @@ export default function Home() {
           content="Arms8 Gym, gym, fitness, personalized training, juice bar, sauna, spa, professional trainers, fitness goals, membership plans, gym membership, fitness journey"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <div
         id={"modal"}
@@ -294,17 +295,17 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-24 ">
               <Trainer
-                name="Adam Doe"
+                name="Neel Vaidya"
                 img="/images/trainers/trainer-2.png"
                 trainerType={"Crossfit"}
               />
               <Trainer
-                name="The Arnold"
+                name="Vilash Shinde"
                 img="/images/trainers/trainer-2.png"
                 trainerType={"Bodybuilding"}
               />
               <Trainer
-                name="Marie D. Thomas"
+                name="Abdul Khan"
                 img="/images/trainers/trainer-2.png"
                 trainerType={"Lifestyle"}
               />
@@ -445,21 +446,21 @@ export default function Home() {
             <div className="flex justify-center gap-10 flex-wrap">
               <PriceCard
                 title={"Newcomer"}
-                price="29.99"
+                price="700"
                 features={""}
                 thumbnail="/images/pricing/pricing-2.jpg"
                 tier={1}
               />
               <PriceCard
                 title={"Experienced"}
-                price="49.99"
+                price="1500"
                 features={""}
                 thumbnail="/images/pricing/pricing-1.webp"
                 tier={2}
               />
               <PriceCard
                 title={"Mr. Olympia"}
-                price="59.99"
+                price="2500"
                 features={""}
                 thumbnail="/images/pricing/pricing-3.webp"
                 tier={3}
@@ -467,6 +468,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <CallOption />
       </main>
       <Footer />
     </>

@@ -41,19 +41,19 @@ export default function Pricing() {
             <div className="flex justify-center gap-10 flex-wrap">
               <PriceCard
                 title={"Newcomer"}
-                price="29.99"
+                price="700"
                 features={""}
                 thumbnail="/images/pricing/pricing-2.jpg"
               />
               <PriceCard
                 title={"Experienced"}
-                price="49.99"
+                price="1500"
                 features={""}
                 thumbnail="/images/pricing/pricing-1.webp"
               />
               <PriceCard
                 title={"Mr. Olympia"}
-                price="59.99"
+                price="2500"
                 features={""}
                 thumbnail="/images/pricing/pricing-3.webp"
               />
