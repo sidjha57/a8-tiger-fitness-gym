@@ -1,6 +1,6 @@
-import { PriceCard } from "./../components/priceCard";
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
+import { PriceCard } from "../components/priceCard";
+import { Footer } from "../components/footer";
+import { Navbar } from "../components/Navbar";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";

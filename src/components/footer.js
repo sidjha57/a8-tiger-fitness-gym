@@ -16,7 +16,7 @@ export function Footer({}) {
             </Link>
             <div className="text-sm flex mt-4 justify-end sm:mt-0 text-gray-200 flex-col h-[70px]">
               <div className="text-lg font-medium">Contact</div>
-              <a className="text-gray-400 font-medium" href="mailto:example@example.com">management@arms8gym.com</a>
+              <a className="text-gray-400 font-medium" href="mailto:example@example.com">arms8gym@gmail.com</a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

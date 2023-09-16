@@ -7,7 +7,7 @@ export default function Document() {
         <script
           defer
           src="https://kit.fontawesome.com/a7908c27f8.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
 
       </Head>
