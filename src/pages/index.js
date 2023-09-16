@@ -1,17 +1,17 @@
-import { PriceCard } from "./../components/priceCard";
-import { Trainer } from "./../components/trainer";
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
+import { PriceCard } from "../components/priceCard";
+import { Trainer } from "../components/trainer";
+import { Footer } from "../components/footer";
+import { Navbar } from "../components/Navbar";
 import { SlideColorBox } from "@/components/SlideColorBox";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [localAtlas, setLocalAtlas] = useState("Newark");
+  const [localAtlas, setLocalAtlas] = useState("Mumbai");
   const [modal, setModal] = useState(false);
   return (
     <>
@@ -295,17 +295,17 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-24 ">
               <Trainer
                 name="Adam Doe"
-                img="/images/trainers/adam-doe-transparent.webp"
+                img="/images/trainers/trainer-2.png"
                 trainerType={"Crossfit"}
               />
               <Trainer
                 name="The Arnold"
-                img="/images/trainers/arnold-transparent.webp"
+                img="/images/trainers/trainer-2.png"
                 trainerType={"Bodybuilding"}
               />
               <Trainer
                 name="Marie D. Thomas"
-                img="/images/trainers/marie-thomas-transparent-2.webp"
+                img="/images/trainers/trainer-2.png"
                 trainerType={"Lifestyle"}
               />
             </div>
