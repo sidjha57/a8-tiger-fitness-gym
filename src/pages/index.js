@@ -27,7 +27,7 @@ export default function Home() {
           content="Arms8 Gym, gym, fitness, personalized training, juice bar, sauna, spa, professional trainers, fitness goals, membership plans, gym membership, fitness journey"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
         id={"modal"}
