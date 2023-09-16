@@ -54,7 +54,7 @@ export function SlideColorBox({ idNum, title, sub, icon, img }) {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        
+
         overflow: "hidden",
       }}
     >
@@ -67,14 +67,19 @@ export function SlideColorBox({ idNum, title, sub, icon, img }) {
           className="w-full flex justify-center relative -top-8 text-white transition-all duration-300 child:bg-zinc-800"
         >
           <div className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] relative  rounded-full flex justify-center items-center ">
-            <i className={`fa-solid fa-${icon} text-xl lg:text-3xl`}></i>
+            {/* <i className={`fa-solid fa-${icon} text-xl lg:text-3xl`}></i> */}
+            <i className="material-symbols-outlined text-xl lg:text-3xl">
+              {icon}
+            </i>
           </div>
         </div>
         <div
           id={"service-" + idNum + "-title"}
           className="text-white -top-10  relative  uppercase font-medium transition-all duration-300"
         >
-          <div className="text-center uppercase text-sm top-1 lg:top-0 relative lg:text-lg">{title}</div>
+          <div className="text-center uppercase text-sm top-1 lg:top-0 relative lg:text-lg">
+            {title}
+          </div>
           <div className="relative top-4 lg:top-28 text-white text-sm lg:text-md font-medium text-center">
             {sub}
           </div>

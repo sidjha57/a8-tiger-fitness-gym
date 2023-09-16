@@ -7,9 +7,9 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [localAtlas, setLocalAtlas] = useState("Mumbai");
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 py-6 max-w-[1800px]">
-            <SlideColorBox
+            {/* <SlideColorBox
               idNum={1}
               title={"Personalized Training"}
               sub={"Work with experienced trainers to achieve your goals"}
@@ -258,7 +258,10 @@ export default function Home() {
               sub={"Post-workout relaxation"}
               icon={"spa"}
               img="/images/spa.jpeg"
-            />
+            /> */}
+            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"sports_martial_arts"} img="/images/mma.webp"/>
+            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"self_improvement"} img="/images/yoga.webp"/>
+            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
           </div>
         </div>
 
