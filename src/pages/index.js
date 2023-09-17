@@ -8,12 +8,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
 import { Inter } from "next/font/google";
-
+import Coverflow from "@/components/Coverflow";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [localAtlas, setLocalAtlas] = useState("Mumbai");
-  const [modal, setModal] = useState(false);
+  const [localArms8, setLocalArms8] = useState("Santacruz");
+  const [modal, setModal] = useState(true); 
   return (
     <>
       <Head>
@@ -47,43 +47,27 @@ export default function Home() {
             <div className="flex flex-wrap justify-start gap-10 child:font-semibold text-gray-800 px-4">
               <button
                 onClick={() => {
-                  setLocalAtlas("New York");
+                  setLocalArms8("Santacruz");
                   setModal(false);
                 }}
               >
-                New York
+                Santacruz
               </button>
               <button
                 onClick={() => {
-                  setLocalAtlas("Philadeliphia");
+                  setLocalArms8("Ville Parle");
                   setModal(false);
                 }}
               >
-                Philadelphia
+                Ville Parle
               </button>
               <button
                 onClick={() => {
-                  setLocalAtlas("Belmar");
+                  setLocalArms8("Andheri");
                   setModal(false);
                 }}
               >
-                Belmar
-              </button>
-              <button
-                onClick={() => {
-                  setLocalAtlas("Atlantic City");
-                  setModal(false);
-                }}
-              >
-                Atlantic City
-              </button>
-              <button
-                onClick={() => {
-                  setLocalAtlas("Newark");
-                  setModal(false);
-                }}
-              >
-                Newark
+                Andheri
               </button>
             </div>
           </div>
@@ -171,13 +155,16 @@ export default function Home() {
                     setModal(true);
                   }}
                 >
-                  {localAtlas}
+                  {localArms8}
                 </button>
                 &nbsp;
                 <button
                   className="uppercase text-xs"
                   role="button"
                   aria-label="Change Local Arms8 Location"
+                  onClick={() => {
+                    setModal(true);
+                  }}
                 >
                   Change
                 </button>
@@ -203,6 +190,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Coverflow />
         <div className="bg-white flex flex-col gap-4 justify-center items-center">
           <div className="text-black  text-center text-2xl mt-10 mb-2.5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold">
             <span>
@@ -264,7 +252,6 @@ export default function Home() {
             <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
           </div>
         </div>
-
         <div className="bg-white flex flex-col">
           <div className="bg-[url('/images/18410.webp')] bg-cover h-max bg-opacity-10 py-8">
             <div className="text-black  text-center text-2xl mt-10 mb-2.5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold">
