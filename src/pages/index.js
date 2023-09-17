@@ -85,6 +85,7 @@ export default function Home() {
       </div>
       <main className="bg-black w-screen">
         <Navbar />
+        <CallOption />
         <div className="flex justify-center items-center mx-auto">
           <div className="h-[85vh] overflow-hidden z-0 bg-[url('/images/landing.webp')] bg-cover bg-no-repeat w-screen">
             <div
@@ -458,7 +459,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <CallOption />
       </main>
       <Footer />
     </>

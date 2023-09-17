@@ -15,13 +15,12 @@ import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/module
 
 export default function Coverflow() {
   return (
-<div class="swiper-container bg-white p-4">
+<div className="swiper-container bg-white p-4">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={2}
-        slideShadows={true}
         loop={true}
         coverflowEffect={{
           rotate: 50,
@@ -34,7 +33,7 @@ export default function Coverflow() {
             clickable: true,
         }}
         autoplay={{
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true, 
           }}        
@@ -45,32 +44,14 @@ export default function Coverflow() {
         className='mySlider bg-white md:w-3/5'
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide> */}
       </Swiper>
     </div>
   );

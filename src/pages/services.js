@@ -4,6 +4,7 @@ import { Navbar } from "./../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { CallOption } from '@/components/CallOption';
 
 export default function Services() {
   const title = "Services";
@@ -21,6 +22,8 @@ export default function Services() {
       </Head>
       <main className="bg-black">
         <Navbar />
+        <CallOption />
+
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
             src="/images/services.webp"

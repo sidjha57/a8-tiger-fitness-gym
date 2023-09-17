@@ -5,6 +5,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { CallOption } from "@/components/CallOption";
 
 const inter = Inter({ subsets: ["latin"] });
 const title = "About Us";
@@ -22,6 +23,7 @@ export default function Pricing() {
       </Head>
       <main className="bg-black">
         <Navbar />
+        <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
             src="/images/sub-page-1.webp"

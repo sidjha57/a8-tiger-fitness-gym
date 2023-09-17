@@ -43,13 +43,15 @@ export function Footer({}) {
               </h2>
               <ul className="text-gray-400  font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline ">
-                    Instagram
+                  <a  href="https://www.instagram.com/arms8gym/" target="_blank" className="hover:underline ">
+                      Instagram
+              
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Facebook
+                  <a href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL" target="_blank" className="hover:underline">
+                        Facebook
+                    
                   </a>
                 </li>
               </ul>
@@ -81,6 +83,14 @@ export function Footer({}) {
               Arms8 Gym™
             </Link>
             . All Rights Reserved.
+          </span>
+        </div>
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-400 sm:text-center ">
+            created by {" "}
+            <Link href="mailto:sidjha57@gmail.com" className="hover:underline">
+              sidjha57@gmail.com
+            </Link>
           </span>
         </div>
       </div>
