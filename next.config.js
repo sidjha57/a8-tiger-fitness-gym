@@ -4,7 +4,6 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    domains: ["cdn.shopify.com"],
   },
 };
 
