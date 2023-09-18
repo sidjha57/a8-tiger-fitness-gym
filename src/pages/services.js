@@ -1,13 +1,10 @@
 import { SlideColorBox } from './../components/SlideColorBox';
-import { ShopItem } from "./../components/ShopItem";
-import { PriceCard } from "./../components/priceCard";
 import { Footer } from "./../components/footer";
 import { Navbar } from "./../components/Navbar";
-import { useState } from "react";
-import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { CallOption } from '@/components/CallOption';
 
 export default function Services() {
   const title = "Services";
@@ -25,6 +22,8 @@ export default function Services() {
       </Head>
       <main className="bg-black">
         <Navbar />
+        <CallOption />
+
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
             src="/images/services.webp"
@@ -46,14 +45,12 @@ export default function Services() {
 
         <div className="bg-white flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-wrap justify-center gap-2 py-10 max-w-[1800px]">
-            <SlideColorBox idNum={1} title={"Personalized Training"} sub={"Work with experienced trainers to achieve your goals"} icon={"dumbbell"} img="/images/trainer.webp"/>
-            <SlideColorBox idNum={2} title={"Sauna"} sub={"Post-workout relaxation"} icon={"temperature-three-quarters"} img="/images/sauna.webp"/>
-            <SlideColorBox idNum={3} title={"Juice Bar"} sub={"Come for a refreshing pre-workout drink or protein smoothie"} icon={"martini-glass"} img="/images/protein.webp"/>
-            <SlideColorBox idNum={4} title={"Group Classes"} sub={"Make some friends and get a killer workout in"} icon={"people-group"} img="/images/group.jpeg"/>
-            <SlideColorBox idNum={5} title={"Childcare"} sub={"Don't let life slow you down from your fitness goals"} icon={"child"} img="/images/daycare.jpeg"/>
-            <SlideColorBox idNum={6} title={"Spa"} sub={"Post-workout relaxation"} icon={"spa"} img="/images/spa.jpeg"/>
-
-
+            {/* <SlideColorBox idNum={1} title={"Personalized Training"} sub={"Work with experienced trainers to achieve your goals"} icon={"exercise"} img="/images/trainer.webp"/> */}
+            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"sports_martial_arts"} img="/images/mma.webp"/>
+            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"self_improvement"} img="/images/yoga.webp"/>
+            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
+            {/* <SlideColorBox idNum={5} title={"Childcare"} sub={"Don't let life slow you down from your fitness goals"} icon={"child"} img="/images/daycare.jpeg"/>
+            <SlideColorBox idNum={6} title={"Spa"} sub={"Post-workout relaxation"} icon={"spa"} img="/images/spa.jpeg"/> */}
           </div>
         </div>
       </main>

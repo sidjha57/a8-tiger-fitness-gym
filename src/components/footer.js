@@ -16,7 +16,7 @@ export function Footer({}) {
             </Link>
             <div className="text-sm flex mt-4 justify-end sm:mt-0 text-gray-200 flex-col h-[70px]">
               <div className="text-lg font-medium">Contact</div>
-              <a className="text-gray-400 font-medium" href="mailto:example@example.com">management@arms8gym.com</a>
+              <a className="text-gray-400 font-medium" href="mailto:example@example.com">arms8gym@gmail.com</a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -43,13 +43,15 @@ export function Footer({}) {
               </h2>
               <ul className="text-gray-400  font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline ">
-                    Instagram
+                  <a  href="https://www.instagram.com/arms8gym/" target="_blank" className="hover:underline ">
+                      Instagram
+              
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Facebook
+                  <a href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL" target="_blank" className="hover:underline">
+                        Facebook
+                    
                   </a>
                 </li>
               </ul>
@@ -81,6 +83,14 @@ export function Footer({}) {
               Arms8 Gym™
             </Link>
             . All Rights Reserved.
+          </span>
+        </div>
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-400 sm:text-center ">
+            created by {" "}
+            <Link href="mailto:sidjha57@gmail.com" className="hover:underline">
+              sidjha57@gmail.com
+            </Link>
           </span>
         </div>
       </div>

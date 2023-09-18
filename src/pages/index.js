@@ -1,25 +1,26 @@
-import { PriceCard } from "./../components/priceCard";
-import { Trainer } from "./../components/trainer";
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
+import { PriceCard } from "../components/priceCard";
+import { Trainer } from "../components/trainer";
+import { Footer } from "../components/footer";
+import { Navbar } from "../components/Navbar";
 import { SlideColorBox } from "@/components/SlideColorBox";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { CallOption } from "@/components/CallOption";
 import { Inter } from "next/font/google";
-
+import Coverflow from "@/components/Coverflow";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [localAtlas, setLocalAtlas] = useState("Newark");
-  const [modal, setModal] = useState(false);
+  const [localArms8, setLocalArms8] = useState("Santacruz");
+  const [modal, setModal] = useState(true); 
   return (
     <>
       <Head>
         <title>Arms8 Gym</title>
         <meta
           name="description"
-          content="Unlock your greatness and forge the body you want at Arms8 Gym. We offer personalized training, a juice bar, sauna & spa, and professional trainers to help you achieve your fitness goals. Join now and experience a game-changing fitness journey!"
+          content="Unlock your greatness and forge the body you want at Arms8 Gym. We offer personalized training, yoga, zumba and professional trainers to help you achieve your fitness goals. Join now and experience a game-changing fitness journey!"
         />
         <meta
           name="keywords"
@@ -46,43 +47,27 @@ export default function Home() {
             <div className="flex flex-wrap justify-start gap-10 child:font-semibold text-gray-800 px-4">
               <button
                 onClick={() => {
-                  setLocalAtlas("New York");
+                  setLocalArms8("Santacruz");
                   setModal(false);
                 }}
               >
-                New York
+                Santacruz
               </button>
               <button
                 onClick={() => {
-                  setLocalAtlas("Philadeliphia");
+                  setLocalArms8("Ville Parle");
                   setModal(false);
                 }}
               >
-                Philadelphia
+                Ville Parle
               </button>
               <button
                 onClick={() => {
-                  setLocalAtlas("Belmar");
+                  setLocalArms8("Andheri");
                   setModal(false);
                 }}
               >
-                Belmar
-              </button>
-              <button
-                onClick={() => {
-                  setLocalAtlas("Atlantic City");
-                  setModal(false);
-                }}
-              >
-                Atlantic City
-              </button>
-              <button
-                onClick={() => {
-                  setLocalAtlas("Newark");
-                  setModal(false);
-                }}
-              >
-                Newark
+                Andheri
               </button>
             </div>
           </div>
@@ -100,6 +85,7 @@ export default function Home() {
       </div>
       <main className="bg-black w-screen">
         <Navbar />
+        <CallOption />
         <div className="flex justify-center items-center mx-auto">
           <div className="h-[85vh] overflow-hidden z-0 bg-[url('/images/landing.webp')] bg-cover bg-no-repeat w-screen">
             <div
@@ -170,13 +156,16 @@ export default function Home() {
                     setModal(true);
                   }}
                 >
-                  {localAtlas}
+                  {localArms8}
                 </button>
                 &nbsp;
                 <button
                   className="uppercase text-xs"
                   role="button"
                   aria-label="Change Local Arms8 Location"
+                  onClick={() => {
+                    setModal(true);
+                  }}
                 >
                   Change
                 </button>
@@ -202,6 +191,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Coverflow />
         <div className="bg-white flex flex-col gap-4 justify-center items-center">
           <div className="text-black  text-center text-2xl mt-10 mb-2.5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold">
             <span>
@@ -214,7 +204,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 py-6 max-w-[1800px]">
-            <SlideColorBox
+            {/* <SlideColorBox
               idNum={1}
               title={"Personalized Training"}
               sub={"Work with experienced trainers to achieve your goals"}
@@ -257,10 +247,12 @@ export default function Home() {
               sub={"Post-workout relaxation"}
               icon={"spa"}
               img="/images/spa.jpeg"
-            />
+            /> */}
+            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"sports_martial_arts"} img="/images/mma.webp"/>
+            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"self_improvement"} img="/images/yoga.webp"/>
+            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
           </div>
         </div>
-
         <div className="bg-white flex flex-col">
           <div className="bg-[url('/images/18410.webp')] bg-cover h-max bg-opacity-10 py-8">
             <div className="text-black  text-center text-2xl mt-10 mb-2.5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold">
@@ -294,18 +286,18 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-24 ">
               <Trainer
-                name="Adam Doe"
-                img="/images/trainers/adam-doe-transparent.webp"
+                name="Neel Vaidya"
+                img="/images/trainers/trainer-2.png"
                 trainerType={"Crossfit"}
               />
               <Trainer
-                name="The Arnold"
-                img="/images/trainers/arnold-transparent.webp"
+                name="Vilash Shinde"
+                img="/images/trainers/trainer-2.png"
                 trainerType={"Bodybuilding"}
               />
               <Trainer
-                name="Marie D. Thomas"
-                img="/images/trainers/marie-thomas-transparent-2.webp"
+                name="Abdul Khan"
+                img="/images/trainers/trainer-2.png"
                 trainerType={"Lifestyle"}
               />
             </div>
@@ -445,21 +437,21 @@ export default function Home() {
             <div className="flex justify-center gap-10 flex-wrap">
               <PriceCard
                 title={"Newcomer"}
-                price="29.99"
+                price="700"
                 features={""}
                 thumbnail="/images/pricing/pricing-2.jpg"
                 tier={1}
               />
               <PriceCard
                 title={"Experienced"}
-                price="49.99"
+                price="1500"
                 features={""}
                 thumbnail="/images/pricing/pricing-1.webp"
                 tier={2}
               />
               <PriceCard
                 title={"Mr. Olympia"}
-                price="59.99"
+                price="2500"
                 features={""}
                 thumbnail="/images/pricing/pricing-3.webp"
                 tier={3}

@@ -1,10 +1,11 @@
-import { PriceCard } from "./../components/priceCard";
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
+import { PriceCard } from "../components/priceCard";
+import { Footer } from "../components/footer";
+import { Navbar } from "../components/Navbar";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { CallOption } from "@/components/CallOption";
 
 const inter = Inter({ subsets: ["latin"] });
 const title = "About Us";
@@ -22,6 +23,7 @@ export default function Pricing() {
       </Head>
       <main className="bg-black">
         <Navbar />
+        <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
             src="/images/sub-page-1.webp"
@@ -48,23 +50,15 @@ export default function Pricing() {
                 Our Story
               </h2>
               <div className="indent-[2rem] font-medium sm:text-[1.5rem] sm:leading-10">
-                At Arms8 Gym, we&apos;re more than just a fitness center;
-                we&apos;re a community dedicated to helping individuals reach
-                their personal zenith. Founded in 2010 by a trio of health and
-                fitness enthusiasts - John, Sarah, and Mike - who were driven by
-                their passion for helping people discover their physical
-                potential, Arms8 Gym was born. Over the years, we&apos;ve stayed
-                true to our roots while evolving to meet the needs of a diverse
-                community. Starting in a modest 2000 sq ft facility, our
-                founders realized the demand for a gym that catered not just to
-                bodybuilders and fitness models, but also to everyday people
-                seeking to lead healthier lives. Today, Arms8 Gym has grown to
-                become a household name in the fitness industry. We&apos;ve
-                expanded to over 20,000 sq ft, equipped with state-of-the-art
-                fitness equipment, diverse workout spaces, and an array of
-                innovative programs. Our commitment to providing an inclusive
-                fitness environment has led us to house over 10,000 active
-                members from all walks of life.
+                Arms 8 Gym is the premier place to get in shape in the heart of
+                the city. Our state-of-the-art facility is kept impeccably clean
+                and hygienic, and we offer a wide range of international branded
+                equipments to help you reach your fitness goals. We also have
+                personal studio spaces and a team of certified trainers to help
+                you get the most out of your workout. Our gym also features
+                elegant and ambient interiors to help you create great workout
+                vibes. Come join us and we guarantee you will have a great time
+                while achieving your fitness goals.
               </div>
 
               <h2 className="text-3xl text-black font-semibold">Our Vision</h2>

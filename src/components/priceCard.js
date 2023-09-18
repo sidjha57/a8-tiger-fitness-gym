@@ -45,7 +45,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
             {title}
           </div>
           <div className="flex justify-center relative left-2">
-            <div className="font-medium text-[2em]">$</div>
+            <div className="font-medium text-[2em]">&#8377;</div>
             <div className="text-black font-semibold text-[3em]">{price}</div>
             <div className="font-medium text-[1em] relative top-8">/Month</div>
           </div>

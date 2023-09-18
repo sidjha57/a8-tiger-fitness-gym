@@ -5,6 +5,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { CallOption } from "@/components/CallOption";
 
 const inter = Inter({ subsets: ["latin"] });
 const title = "Pricing";
@@ -22,6 +23,7 @@ export default function Pricing() {
       </Head>
       <main className="bg-black">
         <Navbar />
+        <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image src="/images/sub-page-1.webp" className="object-cover" fill />
           <div className="w-full h-full z-10 absolute bg-black/50"></div>
@@ -41,19 +43,19 @@ export default function Pricing() {
             <div className="flex justify-center gap-10 flex-wrap">
               <PriceCard
                 title={"Newcomer"}
-                price="29.99"
+                price="700"
                 features={""}
                 thumbnail="/images/pricing/pricing-2.jpg"
               />
               <PriceCard
                 title={"Experienced"}
-                price="49.99"
+                price="1500"
                 features={""}
                 thumbnail="/images/pricing/pricing-1.webp"
               />
               <PriceCard
                 title={"Mr. Olympia"}
-                price="59.99"
+                price="2500"
                 features={""}
                 thumbnail="/images/pricing/pricing-3.webp"
               />
