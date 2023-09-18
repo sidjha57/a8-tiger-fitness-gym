@@ -26,6 +26,7 @@ export default function Contact() {
         <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
+            alt="Man doing pushups"
             src="/images/sub-page-1.webp"
             className="object-cover"
             fill
@@ -44,71 +45,84 @@ export default function Contact() {
         </div>
 
         <div className="bg-[url('/images/18410.webp')] bg-cover flex flex-col py-8 items-center border-b-2">
-          <div className="flex justify-center w-full px-20">
-            <div className="flex flex-col w-[1000px]">
+          <div className="flex justify-center w-full px-4 md:px-20">
+            <div className="flex flex-col w-full md:w-[1000px]">
               <div className="text-3xl font-medium uppercase">
                 Let&apos;s get in touch
               </div>
               <div className="h-[2px] bg-yellow-500 my-2"></div>
               <form>
                 <div className="flex flex-col gap-4">
-                  <div className="flex justify-between">
-                    <div className="flex flex-col w-[400px] ">
-                      <label htmlFor="nameInput" className=" ">
-                        Your Name
-                      </label>
-                      <input
-                        type={"text"}
-                        id="nameInput"
-                        name="name_input"
-                        className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
-                      ></input>
-                    </div>
-
-                    <div className="flex flex-col w-[400px]">
-                      <label htmlFor="nameInput" className="text-md">
-                        Your Email
-                      </label>
-                      <input
-                        type="email"
-                        id="nameInput"
-                        name="name_input"
-                        className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
-                      ></input>
-                    </div>
+                  <div className="flex flex-col">
+                    <label htmlFor="nameInput" className=" ">
+                      Your Name
+                    </label>
+                    <input
+                      type={"text"}
+                      id="nameInput"
+                      name="name_input"
+                      className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                    ></input>
                   </div>
-
-                  <div className="flex justify-between">
-                    <div className="flex flex-col w-[400px] ">
-                      <label htmlFor="nameInput" className=" ">
-                        What You&apos;re Interested In
-                      </label>
-                      <input
-                        type={"text"}
-                        id="nameInput"
-                        name="name_input"
-                        className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
-                      ></input>
-                    </div>
-
-                    <div className="flex flex-col w-[400px]">
-                      <label htmlFor="nameInput" className="text-md">
-                        Your Goal
-                      </label>
-                      <input
-                        type="email"
-                        id="nameInput"
-                        name="name_input"
-                        className="block border p-2 bborder-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
-                      ></input>
-                    </div>
+                  <div className="flex flex-col">
+                    <label htmlFor="emailInput" className="text-md">
+                      Your Email
+                    </label>
+                    <input
+                      type="email"
+                      id="emailInput"
+                      name="email_input"
+                      className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                    ></input>
                   </div>
-                  <div className="w-full h-[300px]">
-                    <div>Your Message</div>
-                    <textarea className="h-[200px] w-full block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"></textarea>
+                  <div className="flex flex-col">
+                    <label htmlFor="interestInput" className=" ">
+                      What You&apos;re Interested In
+                    </label>
+                    <input
+                      type={"text"}
+                      id="interestInput"
+                      name="interest_input"
+                      className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                    ></input>
+                  </div>
+                  <div className="flex flex-col">
+                    <label htmlFor="goalInput" className="text-md">
+                      Your Goal
+                    </label>
+                    <input
+                      type="email"
+                      id="goalInput"
+                      name="goal_input"
+                      className="block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                    ></input>
+                  </div>
+                  <div className="flex flex-col">
+                    <label htmlFor="messageInput" className=" ">
+                      Your Message
+                    </label>
+                    <textarea
+                      id="messageInput"
+                      name="message_input"
+                      className="h-[200px] block border p-2 border-yellow-500 text-gray-700 bg-gray-100 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                    ></textarea>
                   </div>
                 </div>
               </form>
+              <div className="text-3xl font-medium uppercase pt-4 pb-4">
+                Come Visit Us
+              </div>
+              <div className="w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.596552730864!2d72.84821347574974!3d19.081468051799888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c7119475e7%3A0x94654102dcfd27fb!2sKrishna%20Regency!5e0!3m2!1sen!2sin!4v1695062956683!5m2!1sen!2sin"
+                  width="100%"
+                  height="400"
+                  style={{ border: "0" }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

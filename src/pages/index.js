@@ -170,7 +170,7 @@ export default function Home() {
               Your Local Arms8 Gym&nbsp;
               <span>
                 <a
-                  href="https://www.google.com/maps/dir/19.0722315,72.863352/Krishna+Regency,+3VJ2%2BH8M,+Datta+Mandir+Rd,+Demello+Compound,+Vakola,+Santacruz+East,+Mumbai,+Maharashtra+400055/@19.0762395,72.8463335,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7c9c7119475e7:0x94654102dcfd27fb!2m2!1d72.8507845!2d19.081415?entry=ttu"
+                  href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
                   target="_blank"
                 >
                   <i className="fa-solid fa-location-dot"></i>&nbsp;
