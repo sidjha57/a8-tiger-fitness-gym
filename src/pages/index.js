@@ -20,7 +20,7 @@ export default function Home() {
         <title>Arms8 Gym</title>
         <meta
           name="description"
-          content="Unlock your greatness and forge the body you want at Arms8 Gym. We offer personalized training, a juice bar, sauna & spa, and professional trainers to help you achieve your fitness goals. Join now and experience a game-changing fitness journey!"
+          content="Unlock your greatness and forge the body you want at Arms8 Gym. We offer personalized training, yoga, zumba and professional trainers to help you achieve your fitness goals. Join now and experience a game-changing fitness journey!"
         />
         <meta
           name="keywords"

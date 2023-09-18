@@ -1,0 +1,21 @@
+name: CICDPipeline
+
+on:
+  push:
+    branches: [main, sid-dev-1.0]
+
+jobs:
+  lintTest:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          echo "Installing dependencies ..." && npm install
+      - name: Run Linting
+        run: |
+          echo "Running Linting ..." && npm run lint
+        env:
+          CI: true
