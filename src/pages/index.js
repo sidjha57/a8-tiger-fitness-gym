@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");
-  const [modal, setModal] = useState(true); 
+  const [modal, setModal] = useState(true);
   return (
     <>
       <Head>
@@ -137,11 +137,24 @@ export default function Home() {
                 </button>
 
                 <div className="flex gap-5">
-                  <a href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL" target="_blank">
-                    <Image src="/images/facebook-logo.png" width={60} height={60} alt="Facebook logo"/>
+                  <a
+                    href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/images/facebook-logo.png"
+                      width={60}
+                      height={60}
+                      alt="Facebook logo"
+                    />
                   </a>
                   <a href="https://www.instagram.com/arms8gym/" target="_blank">
-                    <Image src="/images/instagram-logo.png" width={60} height={60} alt="Instagram logo"/>
+                    <Image
+                      src="/images/instagram-logo.png"
+                      width={60}
+                      height={60}
+                      alt="Instagram logo"
+                    />
                   </a>
                 </div>
               </div>
@@ -156,7 +169,12 @@ export default function Home() {
             <div className="text-lg sm:text-2xl pt-2 pb-4 tracking-[.1em] font-semibold">
               Your Local Arms8 Gym&nbsp;
               <span>
-                <i className="fa-solid fa-location-dot"></i>&nbsp;
+                <a
+                  href="https://www.google.com/maps/dir/19.0722315,72.863352/Krishna+Regency,+3VJ2%2BH8M,+Datta+Mandir+Rd,+Demello+Compound,+Vakola,+Santacruz+East,+Mumbai,+Maharashtra+400055/@19.0762395,72.8463335,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7c9c7119475e7:0x94654102dcfd27fb!2m2!1d72.8507845!2d19.081415?entry=ttu"
+                  target="_blank"
+                >
+                  <i className="fa-solid fa-location-dot"></i>&nbsp;
+                </a>
                 <button
                   className="hover:tracking-[.15em] transition-all duration-300"
                   role={"button"}
@@ -213,9 +231,33 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 py-6 max-w-[1800px]">
-            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"sports_martial_arts"} img="/images/mma.webp"/>
-            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"self_improvement"} img="/images/yoga.webp"/>
-            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
+            <SlideColorBox
+              idNum={2}
+              title={"MMA / Kick Boxing"}
+              sub={
+                "Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"
+              }
+              icon={"sports_martial_arts"}
+              img="/images/mma.webp"
+            />
+            <SlideColorBox
+              idNum={3}
+              title={"Yoga"}
+              sub={
+                "We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"
+              }
+              icon={"self_improvement"}
+              img="/images/yoga.webp"
+            />
+            <SlideColorBox
+              idNum={4}
+              title={"Zumba"}
+              sub={
+                "Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"
+              }
+              icon={"people"}
+              img="/images/zumba.webp"
+            />
           </div>
         </div>
         <div className="bg-white flex flex-col">
