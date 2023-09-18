@@ -292,7 +292,7 @@ export default function Home() {
               />
               <Trainer
                 name="Vilash Shinde"
-                img="/images/trainers/trainer-2.png"
+                img="/images/trainers/trainer-3.png"
                 trainerType={"Bodybuilding"}
               />
               <Trainer

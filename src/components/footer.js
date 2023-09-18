@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 export function Footer({}) {
   return (
     <footer className="bg-black/95">
@@ -7,11 +8,13 @@ export function Footer({}) {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/images/logo.png"
-                className="h-32  mr-3"
+                className="mr-3"
                 alt="Arms8 Gym Logo"
                 loading="lazy"
+                width={32}
+                height={32}
               />
             </Link>
             <div className="text-sm flex mt-4 justify-end sm:mt-0 text-gray-200 flex-col h-[70px]">
