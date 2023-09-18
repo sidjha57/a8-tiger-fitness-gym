@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   images: {
-    unoptimized: true,
+    domains: ["cdn.shopify.com"],
   },
 };
 
