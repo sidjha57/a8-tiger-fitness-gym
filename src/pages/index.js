@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");
-  const [modal, setModal] = useState(true); 
+  const [modal, setModal] = useState(true);
   return (
     <>
       <Head>
@@ -135,6 +135,28 @@ export default function Home() {
                     className="relative fa-solid fa-arrow-right text-yellow-500 left-0 transition-all duration-200"
                   ></i>
                 </button>
+
+                <div className="flex gap-5">
+                  <a
+                    href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/images/facebook-logo.png"
+                      width={60}
+                      height={60}
+                      alt="Facebook logo"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/arms8gym/" target="_blank">
+                    <Image
+                      src="/images/instagram-logo.png"
+                      width={60}
+                      height={60}
+                      alt="Instagram logo"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +169,12 @@ export default function Home() {
             <div className="text-lg sm:text-2xl pt-2 pb-4 tracking-[.1em] font-semibold">
               Your Local Arms8 Gym&nbsp;
               <span>
-                <i className="fa-solid fa-location-dot"></i>&nbsp;
+                <a
+                  href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
+                  target="_blank"
+                >
+                  <i className="fa-solid fa-location-dot"></i>&nbsp;
+                </a>
                 <button
                   className="hover:tracking-[.15em] transition-all duration-300"
                   role={"button"}
@@ -204,53 +231,33 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 py-6 max-w-[1800px]">
-            {/* <SlideColorBox
-              idNum={1}
-              title={"Personalized Training"}
-              sub={"Work with experienced trainers to achieve your goals"}
-              icon={"dumbbell"}
-              img="/images/trainer.webp"
-            />
             <SlideColorBox
               idNum={2}
-              title={"Sauna"}
-              sub={"Post-workout relaxation"}
-              icon={"temperature-three-quarters"}
-              img="/images/sauna.webp"
+              title={"MMA / Kick Boxing"}
+              sub={
+                "Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"
+              }
+              icon={"sports_martial_arts"}
+              img="/images/mma.webp"
             />
             <SlideColorBox
               idNum={3}
-              title={"Juice Bar"}
+              title={"Yoga"}
               sub={
-                "Come for a refreshing pre-workout drink or protein smoothie"
+                "We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"
               }
-              icon={"martini-glass"}
-              img="/images/protein.webp"
+              icon={"self_improvement"}
+              img="/images/yoga.webp"
             />
             <SlideColorBox
               idNum={4}
-              title={"Group Classes"}
-              sub={"Make some friends and get a killer workout in"}
-              icon={"people-group"}
-              img="/images/group.jpeg"
+              title={"Zumba"}
+              sub={
+                "Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"
+              }
+              icon={"people"}
+              img="/images/zumba.webp"
             />
-            <SlideColorBox
-              idNum={5}
-              title={"Childcare"}
-              sub={"Don't let life slow you down from your fitness goals"}
-              icon={"child"}
-              img="/images/daycare.jpeg"
-            />
-            <SlideColorBox
-              idNum={6}
-              title={"Spa"}
-              sub={"Post-workout relaxation"}
-              icon={"spa"}
-              img="/images/spa.jpeg"
-            /> */}
-            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"sports_martial_arts"} img="/images/mma.webp"/>
-            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"self_improvement"} img="/images/yoga.webp"/>
-            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
           </div>
         </div>
         <div className="bg-white flex flex-col">
@@ -292,7 +299,7 @@ export default function Home() {
               />
               <Trainer
                 name="Vilash Shinde"
-                img="/images/trainers/trainer-2.png"
+                img="/images/trainers/trainer-3.png"
                 trainerType={"Bodybuilding"}
               />
               <Trainer
