@@ -26,6 +26,7 @@ export default function Pricing() {
         <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
+            alt="Man doing pushups"
             src="/images/sub-page-1.webp"
             className="object-cover"
             fill
@@ -60,8 +61,9 @@ export default function Pricing() {
                 vibes. Come join us and we guarantee you will have a great time
                 while achieving your fitness goals.
               </div>
-
-              <h2 className="text-3xl text-black font-semibold">Our Vision</h2>
+              <h4 className="text-2xl text-black font-semibold text-center">
+                Our Vision
+              </h4>{" "}
               <div className="indent-[2rem] font-medium sm:text-[1.5rem] sm:leading-10">
                 Arms8 Gym envisions a world where fitness is not just a goal but
                 a lifestyle. We believe in the power of fitness to transform

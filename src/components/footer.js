@@ -7,19 +7,47 @@ export function Footer({}) {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center mb-10">
               <Image
                 src="/images/logo.png"
                 className="mr-3"
                 alt="Arms8 Gym Logo"
                 loading="lazy"
-                width={32}
-                height={32}
+                width={90}
+                height={90}
               />
             </Link>
-            <div className="text-sm flex mt-4 justify-end sm:mt-0 text-gray-200 flex-col h-[70px]">
+            <div className="text-sm flex mt-8 justify-end sm:mt-0 text-gray-200 flex-col h-[70px]">
               <div className="text-lg font-medium">Contact</div>
-              <a className="text-gray-400 font-medium" href="mailto:example@example.com">arms8gym@gmail.com</a>
+              <a
+                className="text-gray-400 font-medium hover:underline"
+                href="mailto:example@example.com"
+              >
+                arms8gym@gmail.com
+              </a>
+              <span>
+                <a
+                  className="text-gray-400 font-medium hover:underline"
+                  href="tel:+919152510140"
+                >
+                  9152510140
+                </a>
+                {" / "}
+
+                <a
+                  className="text-gray-400 font-medium hover:underline"
+                  href="tel:+917208426300"
+                >
+                  7208426300
+                </a>
+              </span>
+              <a
+                className="text-gray-400 font-medium hover:underline"
+                href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
+                  target="_blank"
+              >               
+               Krishna Regency, Datta Mandir Road, Demello Compound, Vakola, Santacruz East, Mumbai
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -46,15 +74,21 @@ export function Footer({}) {
               </h2>
               <ul className="text-gray-400  font-medium">
                 <li className="mb-4">
-                  <a  href="https://www.instagram.com/arms8gym/" target="_blank" className="hover:underline ">
-                      Instagram
-              
+                  <a
+                    href="https://www.instagram.com/arms8gym/"
+                    target="_blank"
+                    className="hover:underline "
+                  >
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL" target="_blank" className="hover:underline">
-                        Facebook
-                    
+                  <a
+                    href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
+                    target="_blank"
+                    className="hover:underline"
+                  >
+                    Facebook
                   </a>
                 </li>
               </ul>
@@ -90,7 +124,7 @@ export function Footer({}) {
         </div>
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-400 sm:text-center ">
-            created by {" "}
+            created by{" "}
             <Link href="mailto:sidjha57@gmail.com" className="hover:underline">
               sidjha57@gmail.com
             </Link>
