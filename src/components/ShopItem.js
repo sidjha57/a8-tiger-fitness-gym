@@ -19,7 +19,7 @@ export function ShopItem({ name, price, img, colors }) {
   };
 
   return (
-    <button className="h-[650px] w-[350px] ">
+    <button className="h-[650px] w-[350px] " aria-label="Shop button">
       <div
         className="h-[500px] w-full relative mb-4 overflow-hidden"
         onMouseEnter={() => {
@@ -54,6 +54,7 @@ export function ShopItem({ name, price, img, colors }) {
               color == "yellow" ? "" : "border-transparent"
             }`}
             onClick={(e) => handleColorSelection(e)}
+            aria-label="Shop button"
           >
             <div
               id={slugify(name) + "-yellow"}
@@ -66,6 +67,7 @@ export function ShopItem({ name, price, img, colors }) {
               color == "yellow" ? "" : "border-transparent"
             }`}
             onClick={(e) => handleColorSelection(e)}
+            aria-label="Shop button"
           >
             <div
               id={slugify(name) + "-yellow"}
@@ -78,6 +80,7 @@ export function ShopItem({ name, price, img, colors }) {
               color == "brown" ? "" : "border-transparent"
             }`}
             onClick={(e) => handleColorSelection(e)}
+            aria-label="Shop button"
           >
             <div
               id={slugify(name) + "-brown"}
@@ -90,6 +93,7 @@ export function ShopItem({ name, price, img, colors }) {
               color == "gray" ? "" : "border-transparent"
             }`}
             onClick={(e) => handleColorSelection(e)}
+            aria-label="Shop button"
           >
             <div
               id={slugify(name) + "-gray"}
@@ -112,6 +116,7 @@ export function ShopItem({ name, price, img, colors }) {
               .classList.remove("border-blue-500");
               }, "100");
           }}
+          aria-label="Shop button"
         >
           Add to Cart
         </button>

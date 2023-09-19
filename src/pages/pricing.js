@@ -1,13 +1,12 @@
 import { PriceCard } from "./../components/priceCard";
 import { Footer } from "./../components/footer";
 import { Navbar } from "./../components/Navbar";
-import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { CallOption } from "@/components/CallOption";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 const title = "Pricing";
 export default function Pricing() {
   return (
@@ -25,7 +24,7 @@ export default function Pricing() {
         <Navbar />
         <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
-          <Image src="/images/sub-page-1.webp" className="object-cover" fill />
+          <Image alt="Initial Image" src="/images/sub-page-1.webp" className="object-cover" fill />
           <div className="w-full h-full z-10 absolute bg-black/50"></div>
           <div className=" text-center text-2xl mt-10 mb-5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold z-30 text-white">
             <span>

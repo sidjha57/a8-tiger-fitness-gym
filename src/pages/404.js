@@ -1,11 +1,10 @@
 import { Footer } from "../components/footer";
 import { Navbar } from "../components/Navbar";
-import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Pricing() {
   return (
@@ -38,6 +37,7 @@ export default function Pricing() {
           </div>
           <div className="h-[400px] w-[300px]  relative mb-10 border-black border-4">
             <Image
+              alt="Skipped legs"
               src="/images/skipped-legs.webp"
               className="object-cover"
               fill

@@ -3,7 +3,6 @@ import { Footer } from "./../components/footer";
 import { Navbar } from "./../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { CallOption } from '@/components/CallOption';
 
 export default function Services() {
@@ -26,6 +25,7 @@ export default function Services() {
 
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
+            alt="Initial image"
             src="/images/services.webp"
             className="object-cover"
             fill

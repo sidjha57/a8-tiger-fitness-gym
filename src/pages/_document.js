@@ -4,15 +4,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script
+        <NextScript
           defer
           src="https://kit.fontawesome.com/a7908c27f8.js"
-          crossOrigin="anonymous"
-        ></script>
+        ></NextScript>
        
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,200"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,200&display=optional"
         />{" "}
       </Head>
       <body>

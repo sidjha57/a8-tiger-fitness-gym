@@ -22,6 +22,7 @@ export function Footer({}) {
               <a
                 className="text-gray-400 font-medium hover:underline"
                 href="mailto:example@example.com"
+                aria-label="Company mail"
               >
                 arms8gym@gmail.com
               </a>
@@ -29,6 +30,7 @@ export function Footer({}) {
                 <a
                   className="text-gray-400 font-medium hover:underline"
                   href="tel:+919152510140"
+                  aria-label="First phone number"
                 >
                   9152510140
                 </a>
@@ -37,6 +39,7 @@ export function Footer({}) {
                 <a
                   className="text-gray-400 font-medium hover:underline"
                   href="tel:+917208426300"
+                  aria-label="Second phone number"
                 >
                   7208426300
                 </a>
@@ -44,7 +47,8 @@ export function Footer({}) {
               <a
                 className="text-gray-400 font-medium hover:underline"
                 href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
-                  target="_blank"
+                target="_blank"
+                aria-label="Location"
               >               
                Krishna Regency, Datta Mandir Road, Demello Compound, Vakola, Santacruz East, Mumbai
               </a>
@@ -57,12 +61,12 @@ export function Footer({}) {
               </h2>
               <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" aria-label="Candly Tracker">
                     Request Training
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" aria-label="Membership plans">
                     Memberships
                   </a>
                 </li>
@@ -78,6 +82,7 @@ export function Footer({}) {
                     href="https://www.instagram.com/arms8gym/"
                     target="_blank"
                     className="hover:underline "
+                    aria-label="Instagram Linked"
                   >
                     Instagram
                   </a>
@@ -87,6 +92,7 @@ export function Footer({}) {
                     href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
                     target="_blank"
                     className="hover:underline"
+                    aria-label="Facebook"
                   >
                     Facebook
                   </a>
@@ -99,12 +105,12 @@ export function Footer({}) {
               </h2>
               <ul className="text-gray-400  font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" aria-label="privacy policy">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" aria-label="Terms and conditions">
                     Terms &amp; Conditions
                   </a>
                 </li>
