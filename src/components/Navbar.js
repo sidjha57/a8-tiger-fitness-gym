@@ -22,7 +22,7 @@ export function Navbar({ solid }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [solid]);
 
   useEffect(() => {
     if (window.innerWidth > 639)
@@ -109,22 +109,22 @@ export function Navbar({ solid }) {
             mobileNavToggle ? "" : "hidden h-0"
           } `}
         >
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)] ">
+          <button aria-label="Home" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)] ">
             <Link href="/">Home</Link>
           </button>
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)] ">
+          <button aria-label="About" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)] ">
             <Link href="/about">About</Link>
           </button>
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
+          <button aria-label="Services" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/services">Services</Link>
           </button>
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
+          <button aria-label="Pricing" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/pricing">Pricing</Link>
           </button>
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
+          <button aria-label="Shop" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/shop">Shop</Link>
           </button>
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
+          <button aria-label="Contact" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/contact">Contact</Link>
           </button>
         </div>

@@ -1,13 +1,11 @@
-import { PriceCard } from "../components/priceCard";
 import { Footer } from "../components/footer";
 import { Navbar } from "../components/Navbar";
-import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { CallOption } from "@/components/CallOption";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 const title = "Contact Us";
 export default function Contact() {
   return (

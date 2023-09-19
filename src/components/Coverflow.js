@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,14 +8,12 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// import './styles.css';
-
 // import required modules
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 export default function Coverflow() {
   return (
-<div className="swiper-container bg-white p-4">
+    <div className="swiper-container bg-white p-4">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -30,27 +28,42 @@ export default function Coverflow() {
           slideShadows: true,
         }}
         navigation={{
-            clickable: true,
+          clickable: true,
         }}
         autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true, 
-          }}        
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         pagination={{
-            dynamicBullets: true,
-        }}        
+          dynamicBullets: true,
+        }}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className='mySlider bg-white md:w-3/5'
+        className="mySlider bg-white md:w-3/5"
       >
         <SwiperSlide>
-          <img src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" />
+          <video autoPlay muted>
+            <source
+              src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+              type="video/mp4"
+            />
+          </video>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" />
+          <video autoPlay muted>
+            <source
+              src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+              type="video/mp4"
+            />
+          </video>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" />
+          <video autoPlay muted>
+            <source
+              src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+              type="video/mp4"
+            />
+          </video>
         </SwiperSlide>
       </Swiper>
     </div>

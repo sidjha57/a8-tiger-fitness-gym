@@ -7,9 +7,9 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import Coverflow from "@/components/Coverflow";
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");
@@ -50,6 +50,7 @@ export default function Home() {
                   setLocalArms8("Santacruz");
                   setModal(false);
                 }}
+                aria-label="Santacruz"
               >
                 Santacruz
               </button>
@@ -58,6 +59,7 @@ export default function Home() {
                   setLocalArms8("Ville Parle");
                   setModal(false);
                 }}
+                aria-label="Ville Parle"
               >
                 Ville Parle
               </button>
@@ -66,6 +68,7 @@ export default function Home() {
                   setLocalArms8("Andheri");
                   setModal(false);
                 }}
+                aria-label="Andheri"
               >
                 Andheri
               </button>
@@ -77,6 +80,7 @@ export default function Home() {
               onClick={() => {
                 setModal(false);
               }}
+              aria-label="Close"
             >
               Close
             </button>
@@ -128,6 +132,7 @@ export default function Home() {
                   onClick={() => {
                     window.location.assign("/pricing");
                   }}
+                  aria-label="Membership Plans"
                 >
                   Membership Plans{"  "}
                   <i
@@ -140,6 +145,7 @@ export default function Home() {
                   <a
                     href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
                     target="_blank"
+                    aria-label="Facebook Logo"
                   >
                     <Image
                       src="/images/facebook-logo.png"
@@ -148,7 +154,9 @@ export default function Home() {
                       alt="Facebook logo"
                     />
                   </a>
-                  <a href="https://www.instagram.com/arms8gym/" target="_blank">
+                  <a href="https://www.instagram.com/arms8gym/" target="_blank"
+                    aria-label="Instagram Logo"
+                  >
                     <Image
                       src="/images/instagram-logo.png"
                       width={60}
@@ -172,6 +180,7 @@ export default function Home() {
                 <a
                   href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
                   target="_blank"
+                  aria-label="Google Map Location"
                 >
                   <i className="fa-solid fa-location-dot"></i>&nbsp;
                 </a>
@@ -201,14 +210,14 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="flex gap-4 font-medium">
                 <button
-                  className="w-52 h-14 bg-white uppercase text-yellow-500 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
+                  className="w-52 h-14 bg-white uppercase text-yellow-700 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
                   role="button"
                   aria-label="View information about your local Arms8 Gym"
                 >
                   Get Details
                 </button>
                 <button
-                  className="w-36 h-14 bg-white uppercase text-orange-500 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
+                  className="w-36 h-14 bg-white uppercase text-orange-600 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
                   role="button"
                   aria-label="Memberships Button"
                 >

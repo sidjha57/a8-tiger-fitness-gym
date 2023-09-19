@@ -1,12 +1,10 @@
 import { ShopItem } from "./../components/ShopItem";
-import { PriceCard } from "./../components/priceCard";
 import { Footer } from "./../components/footer";
 import { Navbar } from "./../components/Navbar";
 import { useState } from "react";
 import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { CallOption } from "@/components/CallOption";
 
 export default function Shop() {
@@ -56,7 +54,7 @@ export default function Shop() {
           </div>
         </div>
 
-        <button className="fixed w-[75px] h-[75px] bg-white border-2 rounded-full right-0 mx-12 flex justify-center items-center text-2xl hover:text-yellow-500 transition-all duration-200">
+        <button aria-label="Shopping cart" className="fixed w-[75px] h-[75px] bg-white border-2 rounded-full right-0 mx-12 flex justify-center items-center text-2xl hover:text-yellow-500 transition-all duration-200">
           <div
             className={`flex relative ${cartItems.length != 0 ? "left-1" : ""}`}
           >
@@ -74,6 +72,7 @@ export default function Shop() {
         <div className="bg-white flex flex-col items-center border-b-2">
           <div className="flex justify-center gap-20 my-8 text-2xl font-medium ">
             <button
+              aria-label="Shopping cart"
               className={`uppercase tracking-[.15em] border-b-2 ${
                 male
                   ? "text-gray-800 border-gray-600   "
@@ -95,6 +94,7 @@ export default function Shop() {
               For Him
             </button>
             <button
+              aria-label="Shopping cart"
               className={`uppercase tracking-[.15em] border-b-2 ${
                 !male
                   ? "text-gray-800 border-gray-600"

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "next build && next bundle-analyzer"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -19,7 +20,9 @@
     "swiper": "^10.2.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.19",
     "autoprefixer": "^10.4.14",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   }

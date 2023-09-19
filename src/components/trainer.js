@@ -48,6 +48,7 @@ export function Trainer({ name, img, trainerType }) {
               .getElementById(`${nameID}-box-yellow-bar`)
               .classList.remove("w-full");
           }}
+          aria-label="Trainers button"
         >
           <div className="font-semibold text-xl tracking-[.06em]">{name}</div>
           <div className="font-medium text-gray-600">{trainerType} Trainer</div>

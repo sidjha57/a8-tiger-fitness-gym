@@ -60,6 +60,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
       </div>
       <div className="price-card-1-footer h-[150px] flex justify-center items-center">
         <button
+          aria-label="Purchase Button"
           id={"price-btn-" + tier}
           className="bg-white mt-4 py-4 px-6 text-sm uppercase font-bold border border-yellow-500 transition-all duration-300 hover:py-6 hover:px-10 hover:bg-yellow-500 hover:text-white"
         >
