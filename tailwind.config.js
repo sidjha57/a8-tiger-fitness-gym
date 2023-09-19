@@ -5,7 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      // this is font class
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)'],
+      },
       // that is animation class
       animation: {
         fade: 'fadeIn 500ms ease-in-out',

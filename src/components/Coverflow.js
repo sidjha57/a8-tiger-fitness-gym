@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import Image from 'next/image';
 
 export default function Coverflow() {
   return (
@@ -42,28 +43,13 @@ export default function Coverflow() {
         className="mySlider bg-white md:w-3/5"
       >
         <SwiperSlide>
-          <video autoPlay muted>
-            <source
-              src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <Image width={300} height={300} src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" alt="gif 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <video autoPlay muted>
-            <source
-              src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <Image width={300} height={300} src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" alt="gif 2" />
         </SwiperSlide>
         <SwiperSlide>
-          <video autoPlay muted>
-            <source
-              src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <Image width={300} height={300} src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" alt="gif 3" />
         </SwiperSlide>
       </Swiper>
     </div>
