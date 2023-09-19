@@ -25,6 +25,7 @@ export default function Services() {
 
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
+            alt="Initial image"
             src="/images/services.webp"
             className="object-cover"
             fill

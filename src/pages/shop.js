@@ -37,6 +37,7 @@ export default function Shop() {
         <CallOption />
         <div className="h-[400px] w-full bg-black relative flex justify-center items-end">
           <Image
+            alt="Initial Image"
             src="https://cdn.shopify.com/s/files/1/1775/6429/files/465_new_desk_8a59c064-4cd8-4ed7-b231-4dcb28792031_1600x.png?v=1685729660"
             className="object-cover"
             fill
