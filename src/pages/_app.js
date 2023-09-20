@@ -1,6 +1,8 @@
 import "@/styles/globals.css";
 import { Inter } from 'next/font/google'
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/react';
+
  
 const inter = Inter({
   subsets: ['latin'],
@@ -18,6 +20,7 @@ export default function App({ Component, pageProps }) {
           crossOrigin="anonymous"
           strategy="worker"
         />
+      <Analytics />
     </main>
   );
 }
