@@ -10,6 +10,7 @@
     "analyze": "cross-env ANALYZE=true next build && next start"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.8.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.49.0",
