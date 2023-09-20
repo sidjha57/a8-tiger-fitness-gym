@@ -12,6 +12,7 @@
   "dependencies": {
     "@builder.io/partytown": "^0.8.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vercel/analytics": "^1.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.49.0",
     "eslint-config-next": "^13.4.19",
