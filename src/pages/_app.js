@@ -8,7 +8,10 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 })
- 
+
+export function reportWebVitals(metric) {
+  console.log(metric)
+}
 
 export default function App({ Component, pageProps }) {
   return (
