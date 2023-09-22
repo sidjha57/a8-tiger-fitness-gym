@@ -7,7 +7,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
       className="h-[600px] w-[400px]  bg-white border flex-col"
     >
       <div
-        id="price-card-1-head"
+        id={"price-card-head" + tier}
         className="h-[200px] overflow-hidden relative border-b-2 border-yellow-500"
         onMouseEnter={() => {
           document
@@ -36,7 +36,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
           loading="lazy"
         ></Image>
       </div>
-      <div id="price-card-1-body" className="text-center h-[250px]">
+      <div id={"price-card-body" + tier} className="text-center h-[250px]">
         <div className="mx-auto relative bg-white -top-8 w-[250px] text-gray-600">
           <div
             className="text-[1.7em] font-semibold tracking-[.05em] transition-all duration-400"
@@ -58,7 +58,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
           </ul>
         </div>
       </div>
-      <div className="price-card-1-footer h-[150px] flex justify-center items-center">
+      <div className="h-[150px] flex justify-center items-center">
         <button
           aria-label="Purchase Button"
           id={"price-btn-" + tier}

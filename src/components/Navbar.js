@@ -53,7 +53,8 @@ export function Navbar({ solid }) {
             className="object-contain"
             src="/images/logo.png"
             alt="Arms8 Gym Logo"
-            fill
+            height={75}
+            width={75}
             loading="lazy"
           />
         </button>

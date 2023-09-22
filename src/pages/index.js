@@ -1,16 +1,14 @@
-import { PriceCard } from "../components/PriceCard";
-import { Trainer } from "../components/Trainer";
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
 import { SlideColorBox } from "@/components/SlideColorBox";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
-// import { Inter } from "next/font/google";
 import Coverflow from "@/components/Coverflow";
 import { Testimonial } from "@/components/Testimonial";
-// const inter = Inter({ subsets: ["latin"] });
+import { Navbar } from "@/components/Navbar";
+import { Trainer } from "@/components/Trainer";
+import { PriceCard } from "@/components/PriceCard";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");

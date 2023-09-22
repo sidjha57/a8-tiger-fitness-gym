@@ -1,11 +1,9 @@
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
-// import { Inter } from "next/font/google";
 import { CallOption } from "@/components/CallOption";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
 
-// const inter = Inter({ subsets: ["latin"] });
 const title = "About Us";
 export default function Pricing() {
   return (
@@ -59,9 +57,9 @@ export default function Pricing() {
                 vibes. Come join us and we guarantee you will have a great time
                 while achieving your fitness goals.
               </div>
-              <h4 className="text-2xl text-black font-semibold text-center">
+              <h3 className="text-3xl text-black font-semibold text-center">
                 Our Vision
-              </h4>{" "}
+              </h3>{" "}
               <div className="indent-[2rem] font-medium sm:text-[1.5rem] sm:leading-10">
                 Arms8 Gym envisions a world where fitness is not just a goal but
                 a lifestyle. We believe in the power of fitness to transform

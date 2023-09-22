@@ -1,11 +1,9 @@
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
-// import { Inter } from "next/font/google";
 import { CallOption } from "@/components/CallOption";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
-// const inter = Inter({ subsets: ["latin"] });
 const title = "Contact Us";
 export default function Contact() {
   return (
@@ -112,6 +110,7 @@ export default function Contact() {
               </div>
               <div className="w-full">
                 <iframe
+                  title="Google map location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.596552730864!2d72.84821347574974!3d19.081468051799888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c7119475e7%3A0x94654102dcfd27fb!2sKrishna%20Regency!5e0!3m2!1sen!2sin!4v1695062956683!5m2!1sen!2sin"
                   width="100%"
                   height="400"

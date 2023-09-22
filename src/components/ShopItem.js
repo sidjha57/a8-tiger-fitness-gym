@@ -45,7 +45,7 @@ export function ShopItem({ name, price, img, colors }) {
       <div className="h-[75px] w-full  flex flex-col items-center">
         <div className="uppercase font-light tracking-[.1em]">{name}</div>
         <div className="uppercase font-light  text-gray-600 tracking-[.1em]">
-          ${price}
+        &#8377;{price}
         </div>
         <div className="flex gap-1">
           <button
