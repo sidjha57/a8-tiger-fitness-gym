@@ -43,13 +43,13 @@ export default function Coverflow() {
         className="mySlider bg-white md:w-3/5"
       >
         <SwiperSlide>
-          <Image width={300} height={300} src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" alt="gif 1" />
+          <Image width={300} height={300} src="/images/test.gif" alt="gif 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={300} height={300} src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" alt="gif 2" />
+          <Image width={300} height={300} src="/images/test.gif" alt="gif 2" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={300} height={300} src="https://media.giphy.com/media/TTPi3fB9F5Aqs/giphy.gif" alt="gif 3" />
+          <Image width={300} height={300} src="/images/test.gif" alt="gif 3" />
         </SwiperSlide>
       </Swiper>
     </div>

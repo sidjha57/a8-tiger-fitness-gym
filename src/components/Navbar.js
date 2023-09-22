@@ -99,7 +99,7 @@ export function Navbar({ solid }) {
         } transition-all duration-300`}
       >
         <div className="py-6">
-          <button onClick={() => {setMobileNav(!mobileNavToggle)}}>
+          <button onClick={() => {setMobileNav(!mobileNavToggle)}} aria-label="Menu Button">
             <i className="fa-solid fa-bars text-4xl"></i>
           </button>
         </div>

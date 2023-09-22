@@ -1,4 +1,4 @@
-import { Footer } from "../components/footer";
+import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
@@ -116,9 +116,9 @@ export default function Contact() {
                   width="100%"
                   height="400"
                   style={{ border: "0" }}
-                  allowfullscreen=""
+                  allowFullScreen=""
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>
