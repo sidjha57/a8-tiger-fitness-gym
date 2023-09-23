@@ -100,7 +100,7 @@ export default function Home() {
                   <Image
                     className="object-fit   -z-10 bottom-0 "
                     alt="Trainer Backdrop"
-                    src="/images/spray.webp"
+                    src="/images/spray_title.webp"
                     fill
                     loading="lazy"
                   />
@@ -284,7 +284,7 @@ export default function Home() {
                 <Image
                   className="object-fit relative "
                   alt="Trainer Backdrop"
-                  src="/images/spray.webp"
+                  src="/images/spray_title.webp"
                   fill
                   loading="lazy"
                 />
