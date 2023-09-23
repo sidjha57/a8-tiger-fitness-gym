@@ -6,9 +6,9 @@ import { CallOption } from "@/components/CallOption";
 import Coverflow from "@/components/Coverflow";
 import { Testimonial } from "@/components/Testimonial";
 import { Navbar } from "@/components/Navbar";
-import { Trainer } from "@/components/Trainer";
-import { PriceCard } from "@/components/PriceCard";
-import { Footer } from "@/components/Footer";
+import { Trainer } from "@/components/Trainers";
+import { PriceCard } from "@/components/PriceCards";
+import { Footer } from "@/components/PageFooter";
 
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");

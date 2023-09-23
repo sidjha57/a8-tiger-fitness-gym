@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/PageFooter";
 import { Navbar } from "@/components/Navbar";
 
 const title = "About Us";

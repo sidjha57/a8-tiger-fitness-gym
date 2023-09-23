@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
 import { Navbar } from "@/components/Navbar";
-import { PriceCard } from "@/components/PriceCard";
-import { Footer } from "@/components/Footer";
+import { PriceCard } from "@/components/PriceCards";
+import { Footer } from "@/components/PageFooter";
 
 const title = "Pricing";
 export default function Pricing() {

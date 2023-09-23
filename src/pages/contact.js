@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/PageFooter";
 
 const title = "Contact Us";
 export default function Contact() {

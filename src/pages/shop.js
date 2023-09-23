@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
 import { Navbar } from "@/components/Navbar";
 import { ShopItem } from "@/components/ShopItem";
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/PageFooter";
 
 export default function Shop() {
   const title = "Shop";

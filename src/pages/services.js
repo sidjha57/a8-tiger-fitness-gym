@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CallOption } from '@/components/CallOption';
 import { Navbar } from "@/components/Navbar";
 import { SlideColorBox } from "@/components/SlideColorBox";
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/PageFooter";
 
 export default function Services() {
   const title = "Services";
