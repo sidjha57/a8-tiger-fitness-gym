@@ -42,7 +42,7 @@ export default function Pricing() {
                 title={"Newcomer"}
                 price="700"
                 features={""}
-                thumbnail="/images/pricing/pricing-2.jpg"
+                thumbnail="/images/pricing/pricing-2.webp"
               />
               <PriceCard
                 title={"Experienced"}

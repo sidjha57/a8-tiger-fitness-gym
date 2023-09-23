@@ -9,7 +9,7 @@ export function Footer({}) {
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center mb-10">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 className="mr-3"
                 alt="Arms8 Gym Logo"
                 loading="lazy"

@@ -100,7 +100,7 @@ export default function Home() {
                   <Image
                     className="object-fit   -z-10 bottom-0 "
                     alt="Trainer Backdrop"
-                    src="/images/spray.png"
+                    src="/images/spray.webp"
                     fill
                     loading="lazy"
                   />
@@ -147,7 +147,7 @@ export default function Home() {
                     aria-label="Facebook Logo"
                   >
                     <Image
-                      src="/images/facebook-logo.png"
+                      src="/images/facebook-logo.webp"
                       width={60}
                       height={60}
                       alt="Facebook logo"
@@ -157,7 +157,7 @@ export default function Home() {
                     aria-label="Instagram Logo"
                   >
                     <Image
-                      src="/images/instagram-logo.png"
+                      src="/images/instagram-logo.webp"
                       width={60}
                       height={60}
                       alt="Instagram logo"
@@ -245,7 +245,7 @@ export default function Home() {
               sub={
                 "Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"
               }
-              icon={"sports_martial_arts"}
+              icon={"user-ninja"}
               img="/images/mma.webp"
             />
             <SlideColorBox
@@ -254,7 +254,7 @@ export default function Home() {
               sub={
                 "We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"
               }
-              icon={"self_improvement"}
+              icon={"person-praying"}
               img="/images/yoga.webp"
             />
             <SlideColorBox
@@ -263,7 +263,7 @@ export default function Home() {
               sub={
                 "Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"
               }
-              icon={"people"}
+              icon={"people-group"}
               img="/images/zumba.webp"
             />
           </div>
@@ -284,7 +284,7 @@ export default function Home() {
                 <Image
                   className="object-fit relative "
                   alt="Trainer Backdrop"
-                  src="/images/spray.png"
+                  src="/images/spray.webp"
                   fill
                   loading="lazy"
                 />
@@ -302,17 +302,17 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-24 ">
               <Trainer
                 name="Neel Vaidya"
-                img="/images/trainers/trainer-2.png"
+                img="/images/trainers/trainer-2.webp"
                 trainerType={"Crossfit"}
               />
               <Trainer
                 name="Vilash Shinde"
-                img="/images/trainers/trainer-3.png"
+                img="/images/trainers/trainer-3.webp"
                 trainerType={"Bodybuilding"}
               />
               <Trainer
                 name="Abdul Khan"
-                img="/images/trainers/trainer-2.png"
+                img="/images/trainers/trainer-2.webp"
                 trainerType={"Lifestyle"}
               />
             </div>
@@ -392,7 +392,7 @@ export default function Home() {
                 title={"Newcomer"}
                 price="700"
                 features={""}
-                thumbnail="/images/pricing/pricing-2.jpg"
+                thumbnail="/images/pricing/pricing-2.webp"
                 tier={1}
               />
               <PriceCard

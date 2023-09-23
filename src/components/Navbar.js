@@ -51,7 +51,7 @@ export function Navbar({ solid }) {
         >
           <Image
             className="object-contain"
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="Arms8 Gym Logo"
             height={75}
             width={75}

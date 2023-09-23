@@ -29,7 +29,7 @@ export function Trainer({ name, img, trainerType }) {
           <Image
             className="object-fit shadow-yellow-500 z-10 bottom-0 absolute"
             alt="Trainer Backdrop"
-            src="/images/spray.png"
+            src="/images/spray.webp"
             fill
             loading="lazy"
           />

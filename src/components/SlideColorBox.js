@@ -67,10 +67,10 @@ export function SlideColorBox({ idNum, title, sub, icon, img }) {
           className="w-full flex justify-center relative -top-8 text-white transition-all duration-300 child:bg-zinc-800"
         >
           <div className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] relative  rounded-full flex justify-center items-center ">
-            {/* <i className={`fa-solid fa-${icon} text-xl lg:text-3xl`}></i> */}
-            <i className="material-symbols-outlined text-xl lg:text-3xl">
+            <i className={`fa-solid fa-${icon} text-xl lg:text-3xl`}></i>
+            {/* <i className="material-symbols-outlined text-xl lg:text-3xl">
               {icon}
-            </i>
+            </i> */}
           </div>
         </div>
         <div
