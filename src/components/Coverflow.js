@@ -40,16 +40,31 @@ export default function Coverflow() {
           dynamicBullets: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className="mySlider bg-white md:w-3/5"
+        className="mySlider bg-white md:w-3/5 md:h-[600px] w-4/5 h-[400px]"
       >
         <SwiperSlide>
-          <Image width={300} height={300} src="/images/test.gif" alt="gif 1" />
+          <Image id="pic1" fill src="/images/gallery/pic1.webp" alt="pic 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={300} height={300} src="/images/test.gif" alt="gif 2" />
+          <Image id="pic2" fill src="/images/gallery/pic2.webp" alt="pic 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={300} height={300} src="/images/test.gif" alt="gif 3" />
+          <Image id="pic3" fill src="/images/gallery/pic3.webp" alt="pic 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image id="pic4" fill src="/images/gallery/pic4.webp" alt="pic 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image id="pic5" fill src="/images/gallery/pic5.webp" alt="pic 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image id="pic6" fill src="/images/gallery/pic6.webp" alt="pic 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image id="pic7" fill src="/images/gallery/pic7.webp" alt="pic 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image id="pic8" fill src="/images/gallery/pic8.webp" alt="pic 1" />
         </SwiperSlide>
       </Swiper>
     </div>

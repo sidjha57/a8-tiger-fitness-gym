@@ -43,18 +43,21 @@ export default function Pricing() {
                 price="700"
                 features={""}
                 thumbnail="/images/pricing/pricing-2.webp"
+                tier={1}
               />
               <PriceCard
                 title={"Experienced"}
                 price="1500"
                 features={""}
                 thumbnail="/images/pricing/pricing-1.webp"
+                tier={2}
               />
               <PriceCard
                 title={"Mr. Olympia"}
                 price="2500"
                 features={""}
                 thumbnail="/images/pricing/pricing-3.webp"
+                tier={3}
               />
             </div>
           </div>
