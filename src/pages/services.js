@@ -46,9 +46,9 @@ export default function Services() {
         <div className="bg-white flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-wrap justify-center gap-2 py-10 max-w-[1800px]">
             {/* <SlideColorBox idNum={1} title={"Personalized Training"} sub={"Work with experienced trainers to achieve your goals"} icon={"exercise"} img="/images/trainer.webp"/> */}
-            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"sports_martial_arts"} img="/images/mma.webp"/>
-            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"self_improvement"} img="/images/yoga.webp"/>
-            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people"} img="/images/zumba.webp"/>
+            <SlideColorBox idNum={2} title={"MMA / Kick Boxing"} sub={"Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"} icon={"user-ninja"} img="/images/mma.webp"/>
+            <SlideColorBox idNum={3} title={"Yoga"} sub={"We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"} icon={"person-praying"} img="/images/yoga.webp"/>
+            <SlideColorBox idNum={4} title={"Zumba"} sub={"Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"} icon={"people-group"} img="/images/zumba.webp"/>
             {/* <SlideColorBox idNum={5} title={"Childcare"} sub={"Don't let life slow you down from your fitness goals"} icon={"child"} img="/images/daycare.jpeg"/>
             <SlideColorBox idNum={6} title={"Spa"} sub={"Post-workout relaxation"} icon={"spa"} img="/images/spa.jpeg"/> */}
           </div>

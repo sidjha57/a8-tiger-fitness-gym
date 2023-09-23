@@ -245,7 +245,7 @@ export default function Home() {
               sub={
                 "Your fitness destination! Get fit with MMA classes and expert trainers. Customized batches available. Come see why we're your #1 training spot!"
               }
-              icon={"sports_martial_arts"}
+              icon={"user-ninja"}
               img="/images/mma.webp"
             />
             <SlideColorBox
@@ -254,7 +254,7 @@ export default function Home() {
               sub={
                 "We offer certified yoga classes with 12 monthly sessions on Mon, Wed, Fri. Visit us today for info!"
               }
-              icon={"self_improvement"}
+              icon={"person-praying"}
               img="/images/yoga.webp"
             />
             <SlideColorBox
@@ -263,7 +263,7 @@ export default function Home() {
               sub={
                 "Get fit with our certified Zumba trainers. 12 sessions/month, Mon, Wed, Fri batches. Join us on the path to a healthier you!"
               }
-              icon={"people"}
+              icon={"people-group"}
               img="/images/zumba.webp"
             />
           </div>

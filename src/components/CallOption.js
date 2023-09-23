@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export const CallOption = () => {
   return (
@@ -14,7 +13,8 @@ export const CallOption = () => {
       <div className='fixed bottom-32 right-10 z-50'>
         <a href='https://api.whatsapp.com/send/?phone=917208426300&text&type=phone_number&app_absent=0' target="_blank" aria-label="Whatsapp chat linked">
           {/* <i class="fa-brands fa-whatsapp fa-fade text-[35px] bg-green-500 rounded-full p-4"></i> */}
-          <Image src='/images/whatsapp.webp' className='animate-pulse z-20' alt='Call Us' width={60} height={60} />
+          {/* <Image src='/images/whatsapp.webp' className='animate-pulse z-20' alt='Call Us' width={60} height={60} /> */}
+          <i className="fa-brands fa-whatsapp fa-beat-fade text-[#25d366] text-6xl p-0"></i>
         </a>
       </div>
     </div>
