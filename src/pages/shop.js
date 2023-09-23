@@ -1,11 +1,11 @@
-import { ShopItem } from "./../components/ShopItem";
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
 import { useState } from "react";
 import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
+import { Navbar } from "@/components/Navbar";
+import { ShopItem } from "@/components/ShopItem";
+import { Footer } from "@/components/PageFooter";
 
 export default function Shop() {
   const title = "Shop";
@@ -125,42 +125,42 @@ export default function Shop() {
               <>
                 <ShopItem
                   name="Essential Oversized Tee"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/DSC01331_800x.jpg?v=1653094875"
                   }
                 />
                 <ShopItem
                   name="Corduroy Supersized Tee"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/YLA12.2_600x.jpg?v=1670460053"
                   }
                 />
                 <ShopItem
                   name="Pleated Festival Shirt"
-                  price={39.99}
+                  price={599}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/files/YLA_Malibu_D5-30_0001_6360b23a-a97c-4009-94cd-e02222d0208a_600x.jpg?v=1685470270"
                   }
                 />
                 <ShopItem
                   name="Perfect Pocket Tee"
-                  price={31.99}
+                  price={299}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/YLA10.14.21-111_600x.jpg?v=1653085298"
                   }
                 />
                 <ShopItem
                   name="The Flock Tees"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/Floorpicture_1_1_600x.jpg?v=1653075822"
                   }
                 />
                 <ShopItem
                   name="Perfect Tee - Scallop Bottom"
-                  price={31.99}
+                  price={299}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/untitled-61_600x.jpg?v=1653082379"
                   }
@@ -170,42 +170,42 @@ export default function Shop() {
               <>
                 <ShopItem
                   name="W209 LEVEL UP LEGGINGS"
-                  price={44.99}
+                  price={799}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/files/YLA_HER_Victoria_May_18_202314072_600x.jpg?v=1685041054"
                   }
                 />
                 <ShopItem
                   name="Essential Oversized Tee 2"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/DSC01331_800x.jpg?v=1653094875"
                   }
                 />
                 <ShopItem
                   name="Essential Oversized Tee 3 "
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/DSC01331_800x.jpg?v=1653094875"
                   }
                 />
                 <ShopItem
                   name="Essential Oversized Tee 4"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/DSC01331_800x.jpg?v=1653094875"
                   }
                 />
                 <ShopItem
                   name="Essential Oversized Tee 5"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/DSC01331_800x.jpg?v=1653094875"
                   }
                 />
                 <ShopItem
                   name="Essential Oversized Tee 6"
-                  price={34.99}
+                  price={399}
                   img={
                     "https://cdn.shopify.com/s/files/1/1775/6429/products/DSC01331_800x.jpg?v=1653094875"
                   }

@@ -13,5 +13,6 @@ module.exports = withBundleAnalyzer({
   },
   images: {
     domains: ["cdn.shopify.com", "media.giphy.com", "apis.google.com", "kit.fontawesome.com"],
+    deviceSizes: [640, 768, 1024, 1280, 1536],
   },
 });

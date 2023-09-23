@@ -1,12 +1,10 @@
-import { PriceCard } from "./../components/priceCard";
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
-// import { Inter } from "next/font/google";
 import { CallOption } from "@/components/CallOption";
+import { Navbar } from "@/components/Navbar";
+import { PriceCard } from "@/components/PriceCards";
+import { Footer } from "@/components/PageFooter";
 
-// const inter = Inter({ subsets: ["latin"] });
 const title = "Pricing";
 export default function Pricing() {
   return (

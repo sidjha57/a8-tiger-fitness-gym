@@ -6,7 +6,7 @@ export const CallOption = () => {
     <div>
       <div className='fixed bottom-10 right-10 z-50'>
         <a href='tel:7208426300' aria-label="Phone No.">
-          <i class="fa-sharp fa-solid fa-phone fa-shake text-[30px] text-yellow-700 bg-yellow-300 rounded-full p-4"></i>
+          <i className="fa-sharp fa-solid fa-phone fa-shake text-[30px] text-yellow-700 bg-yellow-300 rounded-full p-4"></i>
           
           {/* <Image src='/images/phone-icon.svg' className='bg-yellow-300 p-2 rounded-full animate-bounce z-20' alt='Call Us' width={60} height={60} /> */}
         </a>

@@ -24,11 +24,11 @@ export function Footer({}) {
                 href="mailto:example@example.com"
                 aria-label="Company mail"
               >
-                <i class="fa-solid fa-envelope text-gray-400 mr-2"></i> 
+                <i className="fa-solid fa-envelope text-gray-400 mr-2"></i> 
                 arms8gym@gmail.com
               </a>
               <span>
-                <i class="fa-solid fa-phone fa-sharp text-gray-400 mr-2"></i>
+                <i className="fa-solid fa-phone fa-sharp text-gray-400 mr-2"></i>
                 <a
                   className="text-gray-400 font-medium hover:underline"
                   href="tel:+919152510140"
@@ -52,7 +52,7 @@ export function Footer({}) {
                 target="_blank"
                 aria-label="Location"
               >       
-               <i class="fa-solid fa-location-dot mr-2"></i>{" "}
+               <i className="fa-solid fa-location-dot mr-2"></i>{" "}
                Krishna Regency, Datta Mandir Road, Vakola, Santacruz (E), Mumbai
               </a>
             </div>

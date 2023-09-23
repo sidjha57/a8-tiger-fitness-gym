@@ -1,16 +1,14 @@
-import { PriceCard } from "../components/priceCard";
-import { Trainer } from "../components/trainer";
-import { Footer } from "../components/footer";
-import { Navbar } from "../components/Navbar";
 import { SlideColorBox } from "@/components/SlideColorBox";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from "@/components/CallOption";
-// import { Inter } from "next/font/google";
 import Coverflow from "@/components/Coverflow";
 import { Testimonial } from "@/components/Testimonial";
-// const inter = Inter({ subsets: ["latin"] });
+import { Navbar } from "@/components/Navbar";
+import { Trainer } from "@/components/Trainers";
+import { PriceCard } from "@/components/PriceCards";
+import { Footer } from "@/components/PageFooter";
 
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");
@@ -218,7 +216,7 @@ export default function Home() {
                   Get Details
                 </button>
                 <button
-                  className="w-36 h-14 bg-white uppercase text-orange-600 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
+                  className="w-36 h-14 bg-white uppercase text-red-600 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
                   role="button"
                   aria-label="Memberships Button"
                 >

@@ -10,7 +10,8 @@ const inter = Inter({
 })
 
 export function reportWebVitals(metric) {
-  console.log(metric)
+  if (process.env.NODE_ENV !== 'production') 
+    console.log(metric)
 }
 
 export default function App({ Component, pageProps }) {

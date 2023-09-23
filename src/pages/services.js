@@ -1,9 +1,9 @@
-import { SlideColorBox } from './../components/SlideColorBox';
-import { Footer } from "./../components/footer";
-import { Navbar } from "./../components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 import { CallOption } from '@/components/CallOption';
+import { Navbar } from "@/components/Navbar";
+import { SlideColorBox } from "@/components/SlideColorBox";
+import { Footer } from "@/components/PageFooter";
 
 export default function Services() {
   const title = "Services";
