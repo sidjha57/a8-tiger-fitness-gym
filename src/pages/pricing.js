@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { PriceCard } from "@/components/PriceCards";
 import { Footer } from "@/components/PageFooter";
 
-const title = "Pricing";
+const title = "Membership Plans";
 export default function Pricing() {
   return (
     <>

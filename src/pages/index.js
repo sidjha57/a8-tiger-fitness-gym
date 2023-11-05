@@ -13,6 +13,8 @@ import { Footer } from "@/components/PageFooter";
 export default function Home() {
   const [localArms8, setLocalArms8] = useState("Santacruz");
   const [modal, setModal] = useState(true);
+  const [termsModal, setTermsModal] = useState(false);
+
   return (
     <>
       <Head>
@@ -23,7 +25,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Arms8 Gym, gym, fitness, personalized training, juice bar, sauna, spa, professional trainers, fitness goals, membership plans, gym membership, fitness journey"
+          content="Arms8 Gym, gym, fitness, personalized training, santacruz gym, arms8, arm gym, professional trainers, fitness goals, membership plans, gym membership, fitness journey"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -86,11 +88,65 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <dialog
+        id="policy"
+        className={`${
+          termsModal ? "fixed" : "hidden"
+        } w-screen h-screen bg-black/50 z-50 overflow-y-hidden flex justify-center items-center `}
+      >
+        <div className="w-[300px] h-[420px] sm:w-[600px] sm:h-[280px] bg-white rounded-md flex flex-col  items-center gap-4 leading-5 overflow-hidden">
+          <div className="w-full h-[40px] py-2 px-4 border-b-2">
+            <div className="leading-6 ">
+              <div className="text-[1.2em] text-gray-900 font-medium">
+                Privacy Policy
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <div className="flex flex-wrap justify-start gap-2 pr-4 text-gray-800 px-6">
+              <li>
+                <strong>Environment: </strong> 
+                We prioritize a safe, clean, and enjoyable setting.
+              </li>
+              <li>
+              <strong>Conduct: </strong>
+                Expect respectful behavior, no disrespect tolerated.
+              </li>
+              <li>
+                <strong>Prohibitions: </strong>
+                 No smoking, drugs, gum, or food allowed.</li>
+              <li>
+              <strong>Child Policy: </strong>
+                 Children under 14 need parental supervision.
+              </li>
+              <li>
+              <strong>Check-In: </strong>
+                 Members must punch in when entering the gym.</li>
+              <li>
+              <strong>Valuables: </strong>
+                Avoid bringing valuables; we&apos;re not liable for
+                losses.
+              </li>
+            </div>
+          </div>
+          <div className="w-full h-[50px] bg-gray-200 flex justify-end items-center">
+            <button
+              className="bg-white border-2 border-yellow-500 h-[40px] w-[60px] mx-4 text-black transition-all duration-100 hover:bg-yellow-500 hover:text-white hover:h-[50px] hover:w-[65px]"
+              onClick={() => 
+                setTermsModal(false)
+              }
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </dialog>
       <main className="bg-black w-screen">
         <Navbar />
         <CallOption />
         <div className="flex justify-center items-center mx-auto">
-          <div className="h-[85vh] overflow-hidden z-0 bg-[url('/images/landing.webp')] bg-cover bg-no-repeat w-screen">
+        <div className="h-[85vh] overflow-hidden z-0 bg-[url('/images/landing.webp')] bg-cover bg-no-repeat w-screen">
             <div
               name="bgChild"
               className="relative flex flex-col justify-center items-center sm:items-end text-left  w-full h-full pr-12"
@@ -153,7 +209,9 @@ export default function Home() {
                       alt="Facebook logo"
                     />
                   </a>
-                  <a href="https://www.instagram.com/arms8gym/" target="_blank"
+                  <a
+                    href="https://www.instagram.com/arms8gym/"
+                    target="_blank"
                     aria-label="Instagram Logo"
                   >
                     <Image
@@ -330,8 +388,8 @@ export default function Home() {
               <div className="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-orange-600"></div>
             </span>
           </div>
-              <Testimonial />
-         
+          <Testimonial />
+
           <div className="text-black  text-center text-xl mt-10 mb-10 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold underline">
             Brands We Work With
           </div>
@@ -381,7 +439,7 @@ export default function Home() {
             <span>
               <div className="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-orange-600"></div>
             </span>
-            Pricing
+            Membership Plans
             <span>
               <div className="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-orange-600"></div>
             </span>
@@ -413,7 +471,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer setTermsModal={setTermsModal} />
     </>
   );
 }
