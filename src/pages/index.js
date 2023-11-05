@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Arms8 Gym</title>
+        <title>Arms8 Gym: Premier Santacruz Fitness Destination.</title>
         <meta
           name="description"
           content="Discover your potential and sculpt the body of your dreams at Arms8 Gym. Our tailored approach to fitness includes personalized training, invigorating yoga, lively Zumba classes, and expert guidance from certified trainers, ensuring you reach your fitness aspirations. Embrace a transformative fitness journey by joining us today and unlock a new level of wellness and vitality!"
