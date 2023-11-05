@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-export function Footer({}) {
+export function Footer({setTermsModal}) {
   return (
     <footer className="bg-black/95">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -9,7 +9,7 @@ export function Footer({}) {
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center mb-10">
               <Image
-                src="/images/logo.webp"
+                src="/images/logos/logo.webp"
                 className="mr-3"
                 alt="Arms8 Gym Logo"
                 loading="lazy"
@@ -108,15 +108,15 @@ export function Footer({}) {
               </h2>
               <ul className="text-gray-400  font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline" aria-label="privacy policy">
-                    Privacy Policy
-                  </a>
+                  <button onClick={() => setTermsModal(true)} className="hover:underline text-left" aria-label="privacy policy">
+                  Terms &amp; Conditions
+                  </button>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:underline" aria-label="Terms and conditions">
-                    Terms &amp; Conditions
+                  Privacy Policy
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
