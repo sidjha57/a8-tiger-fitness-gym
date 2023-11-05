@@ -52,12 +52,12 @@ export function Trainer({ name, img, trainerType }) {
         >
           <div className="font-semibold text-xl tracking-[.06em]">{name}</div>
           <div className="font-medium text-gray-600">{trainerType} Trainer</div>
-          <div className="font-medium text-gray-600 flex justify-center gap-5 mt-1">
+          {/* <div className="font-medium text-gray-600 flex justify-center gap-5 mt-1">
             <i className="fa-brands fa-solid fa-instagram"></i>
             <i className="fa-brands fa-solid fa-facebook"></i>
             <i className="fa-brands fa-solid fa-twitter"></i>
             <i className="fa-solid fa-envelope"></i>
-          </div>
+          </div> */}
           <div className="flex justify-center items-end relative bottom-0 h-3">
             <div
               id={`${nameID}-box-yellow-bar`}
