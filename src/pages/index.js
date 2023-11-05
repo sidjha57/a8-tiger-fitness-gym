@@ -21,11 +21,11 @@ export default function Home() {
         <title>Arms8 Gym</title>
         <meta
           name="description"
-          content="Unlock your greatness and forge the body you want at Arms8 Gym. We offer personalized training, yoga, zumba and professional trainers to help you achieve your fitness goals. Join now and experience a game-changing fitness journey!"
+          content="Discover your potential and sculpt the body of your dreams at Arms8 Gym. Our tailored approach to fitness includes personalized training, invigorating yoga, lively Zumba classes, and expert guidance from certified trainers, ensuring you reach your fitness aspirations. Embrace a transformative fitness journey by joining us today and unlock a new level of wellness and vitality!"
         />
         <meta
           name="keywords"
-          content="Arms8 Gym, gym, fitness, personalized training, santacruz gym, arms8, arm gym, professional trainers, fitness goals, membership plans, gym membership, fitness journey"
+          content="Arms8 Gym in Santacruz offers tailored fitness solutions, including personalized training led by professional trainers to help you achieve your fitness goals. Explore our various membership plans for a fulfilling fitness journey at Arms8, your dedicated arm gym in the area. Join our gym today to experience personalized fitness programs, expert guidance, and exclusive membership benefits."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
