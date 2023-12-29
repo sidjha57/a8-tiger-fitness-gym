@@ -41,21 +41,21 @@ export default function Pricing() {
               <PriceCard
                 title={"Newcomer"}
                 price="700"
-                features={""}
+                features={['Personal Training', 'General Gym Acess', 'Sauna Access']}
                 thumbnail="/images/pricing/pricing-2.webp"
                 tier={1}
               />
               <PriceCard
                 title={"Experienced"}
                 price="1500"
-                features={""}
+                features={['Personal Training', 'General Gym Acess', 'Sauna Access']}
                 thumbnail="/images/pricing/pricing-1.webp"
                 tier={2}
               />
               <PriceCard
                 title={"Mr. Olympia"}
                 price="2500"
-                features={""}
+                features={['Personal Training', 'General Gym Acess', 'Sauna Access']}
                 thumbnail="/images/pricing/pricing-3.webp"
                 tier={3}
               />
