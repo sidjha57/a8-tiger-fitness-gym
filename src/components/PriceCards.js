@@ -1,64 +1,62 @@
 import React from "react";
 import Image from "next/image";
 export function PriceCard({ title, price, features, thumbnail, tier }) {
-  return (
-    <div
-      id="price-card-1"
-      className="h-[450px] w-[400px]  bg-white border flex-col"
-    >
-      <div
-        id={"price-card-head" + tier}
-        className="h-[200px] overflow-hidden relative border-b-2 border-yellow-500"
-        onMouseEnter={() => {
-          document
-            .getElementById((title.toLowerCase() + "-img").toLowerCase())
-            .classList.remove("sm:grayscale");
-          document
-            .getElementById((title.toLowerCase() + "-title").toLowerCase())
-            .classList.add("text-yellow-500");
-        }}
-        onMouseLeave={() => {
-          document
-            .getElementById((title.toLowerCase() + "-img").toLowerCase())
-            .classList.add("sm:grayscale");
-          document
-            .getElementById((title.toLowerCase() + "-title").toLowerCase())
-            .classList.remove("text-yellow-500");
-        }}
-      >
-        <Image
-          src={thumbnail}
-          id={title.toLowerCase() + "-img"}
-          alt={title + " tier membership thumbnail"}
-          className="object-none sm:grayscale transition-all duration-400"
-          width={600}
-          height={300}
-          loading="lazy"
-        ></Image>
-      </div>
-      <div id={"price-card-body" + tier} className="text-center h-[250px]">
-        <div className="mx-auto relative bg-white -top-8 w-[250px] text-gray-600">
-          <div
-            className="text-[1.7em] font-semibold tracking-[.05em] transition-all duration-400"
-            id={title.toLowerCase() + "-title"}
-          >
-            {title}
-          </div>
-          {/* <div className="flex justify-center relative left-2">
+	return (
+		<div
+			id="price-card-1"
+			className="h-[450px] w-[400px]  bg-white border flex-col"
+		>
+			<div
+				id={"price-card-head" + tier}
+				className="h-[200px] overflow-hidden relative border-b-2 border-yellow-500"
+				onMouseEnter={() => {
+					document
+						.getElementById((title.toLowerCase() + "-img").toLowerCase())
+						.classList.remove("sm:grayscale");
+					document
+						.getElementById((title.toLowerCase() + "-title").toLowerCase())
+						.classList.add("text-yellow-500");
+				}}
+				onMouseLeave={() => {
+					document
+						.getElementById((title.toLowerCase() + "-img").toLowerCase())
+						.classList.add("sm:grayscale");
+					document
+						.getElementById((title.toLowerCase() + "-title").toLowerCase())
+						.classList.remove("text-yellow-500");
+				}}
+			>
+				<Image
+					src={thumbnail}
+					id={title.toLowerCase() + "-img"}
+					alt={title + " tier membership thumbnail"}
+					className="object-none sm:grayscale transition-all duration-400"
+					width={600}
+					height={300}
+					loading="lazy"
+				></Image>
+			</div>
+			<div id={"price-card-body" + tier} className="text-center h-[250px]">
+				<div className="mx-auto relative bg-white -top-8 w-[250px] text-gray-600">
+					<div
+						className="text-[1.7em] font-semibold tracking-[.05em] transition-all duration-400"
+						id={title.toLowerCase() + "-title"}
+					>
+						{title}
+					</div>
+					{/* <div className="flex justify-center relative left-2">
             <div className="font-medium text-[2em]">&#8377;</div>
             <div className="text-black font-semibold text-[3em]">{price}</div>
             <div className="font-medium text-[1em] relative top-8">/Month</div>
           </div> */}
-          <ul className="leading-[2em] text-lg">
-            <li>Monthly Free Training Session</li>
-            <li>General Gym Access</li>
-            <li>Sauna Access</li>
-            <li>Placeholder</li>
-            <li>Placeholder</li>
-          </ul>
-        </div>
-      </div>
-      {/* <div className="h-[150px] flex justify-center items-center">
+					<ul className="leading-[2em] text-lg">
+						{features.map((feature, index) => (
+							<li key={index}>{feature}</li>
+						))}
+					</ul>
+				</div>
+			</div>
+			{/* <div className="h-[150px] flex justify-center items-center">
         <button
           aria-label="Purchase Button"
           id={"price-btn-" + tier}
@@ -67,6 +65,6 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
           Purchase Now
         </button>
       </div> */}
-    </div>
-  );
+		</div>
+	);
 }

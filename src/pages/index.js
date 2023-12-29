@@ -6,7 +6,7 @@ import { CallOption } from "@/components/CallOption";
 import Coverflow from "@/components/Coverflow";
 import { Testimonial } from "@/components/Testimonial";
 import { Navbar } from "@/components/Navbar";
-import { Trainer } from "@/components/Trainers";
+// import { Trainer } from "@/components/Trainers";
 import { PriceCard } from "@/components/PriceCards";
 import { Footer } from "@/components/PageFooter";
 
@@ -449,21 +449,21 @@ export default function Home() {
               <PriceCard
                 title={"Newcomer"}
                 price="700"
-                features={""}
+                features={['Personal Training', 'General Gym Acess', 'Sauna Access']}
                 thumbnail="/images/pricing/pricing-2.webp"
                 tier={1}
               />
               <PriceCard
                 title={"Experienced"}
                 price="1500"
-                features={""}
+                features={['Personal Training', 'General Gym Acess', 'Sauna Access']}
                 thumbnail="/images/pricing/pricing-1.webp"
                 tier={2}
               />
               <PriceCard
                 title={"Mr. Olympia"}
                 price="2500"
-                features={""}
+                features={['Personal Training', 'General Gym Acess', 'Sauna Access']}
                 thumbnail="/images/pricing/pricing-3.webp"
                 tier={3}
               />
