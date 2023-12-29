@@ -11,7 +11,7 @@ export function Footer({setTermsModal}) {
               <Image
                 src="/images/logos/logo.webp"
                 className="mr-3"
-                alt="Arms8 Gym Logo"
+                alt="A8 Tiger Fitness Gym Logo"
                 loading="lazy"
                 width={90}
                 height={90}
@@ -25,7 +25,7 @@ export function Footer({setTermsModal}) {
                 aria-label="Company mail"
               >
                 <i className="fa-solid fa-envelope text-gray-400 mr-2"></i> 
-                arms8gym@gmail.com
+                a8tigerfitnessgym@gmail.com
               </a>
               <span>
                 <i className="fa-solid fa-phone fa-sharp text-gray-400 mr-2"></i>
@@ -82,7 +82,7 @@ export function Footer({setTermsModal}) {
               <ul className="text-gray-400  font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://www.instagram.com/arms8gym/"
+                    href="https://www.instagram.com/a8tigerfitnessgym/"
                     target="_blank"
                     className="hover:underline "
                     aria-label="Instagram Linked"
@@ -126,7 +126,7 @@ export function Footer({setTermsModal}) {
           <span className="text-sm text-gray-200 sm:text-center ">
             © 2023{" "}
             <Link href="/" className="hover:underline">
-              Arms8 Gym™
+              A8 Tiger Fitness Gym™
             </Link>
             . All Rights Reserved.
           </span>

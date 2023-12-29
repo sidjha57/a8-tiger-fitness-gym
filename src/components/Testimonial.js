@@ -7,19 +7,19 @@ export const Testimonial = () => {
         [
             {
                 image: "/images/testimonial-guy.webp",
-                desc:  "The Arms8 Gym has truly been a game-changer in my fitness journey. Its welcoming environment, top-notch equipment, and expert trainers have supported me in surpassing my fitness goals. From tailor-made personal training plans to diverse group classes, they offer an all-encompassing approach to health. Thanks to Arms8 Gym, I am stronger, healthier, and more confident than ever.",
+                desc:  "The A8 Tiger Fitness Gym has truly been a game-changer in my fitness journey. Its welcoming environment, top-notch equipment, and expert trainers have supported me in surpassing my fitness goals. From tailor-made personal training plans to diverse group classes, they offer an all-encompassing approach to health. Thanks to A8 Tiger Fitness Gym, I am stronger, healthier, and more confident than ever.",
                 name:  "Matthew M. Walsh",
                 profession: "Fitness Influencer"
             },
             {
                 image: "/images/testimonial-guy.webp",
-                desc:  "The Arms8 Gym has truly been a game-changer in my fitness journey. Its welcoming environment, top-notch equipment, and expert trainers have supported me in surpassing my fitness goals. From tailor-made personal training plans to diverse group classes, they offer an all-encompassing approach to health. Thanks to Arms8 Gym, I am stronger, healthier, and more confident than ever.",
+                desc:  "The A8 Tiger Fitness Gym has truly been a game-changer in my fitness journey. Its welcoming environment, top-notch equipment, and expert trainers have supported me in surpassing my fitness goals. From tailor-made personal training plans to diverse group classes, they offer an all-encompassing approach to health. Thanks to A8 Tiger Fitness Gym, I am stronger, healthier, and more confident than ever.",
                 name:  "Matthew M",
                 profession: "Fitness Influencer"
             },
             {
                 image: "/images/testimonial-guy.webp",
-                desc:  "The Arms8 Gym has truly been a game-changer in my fitness journey. Its welcoming environment, top-notch equipment, and expert trainers have supported me in surpassing my fitness goals. From tailor-made personal training plans to diverse group classes, they offer an all-encompassing approach to health. Thanks to Arms8 Gym, I am stronger, healthier, and more confident than ever.",
+                desc:  "The A8 Tiger Fitness Gym has truly been a game-changer in my fitness journey. Its welcoming environment, top-notch equipment, and expert trainers have supported me in surpassing my fitness goals. From tailor-made personal training plans to diverse group classes, they offer an all-encompassing approach to health. Thanks to A8 Tiger Fitness Gym, I am stronger, healthier, and more confident than ever.",
                 name:  "Walsh",
                 profession: "Fitness Influencer"
             }
@@ -31,7 +31,7 @@ export const Testimonial = () => {
         <div className="h-[425px] w-[250px]  rounded-tr-[6.7em] relative overflow-hidden hidden md:block">
           <Image
             className="object-cover z-10 "
-            alt="Fit Arms8 Gym Member With Testimonial"
+            alt="Fit A8 Tiger Fitness Gym Member With Testimonial"
             src={testimonial[index].image}
             fill
           />

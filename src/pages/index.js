@@ -11,21 +11,21 @@ import { PriceCard } from "@/components/PriceCards";
 import { Footer } from "@/components/PageFooter";
 
 export default function Home() {
-  const [localArms8, setLocalArms8] = useState("Santacruz");
+  const [localA8TigerFitness8, setLocalA8TigerFitness8] = useState("Santacruz");
   const [modal, setModal] = useState(true);
   const [termsModal, setTermsModal] = useState(false);
 
   return (
     <>
       <Head>
-        <title>Arms8 Gym: Premier Santacruz Fitness Destination.</title>
+        <title>A8 Tiger Fitness Gym: Premier Santacruz Fitness Destination.</title>
         <meta
           name="description"
-          content="Discover your potential and sculpt the body of your dreams at Arms8 Gym. Our tailored approach to fitness includes personalized training, invigorating yoga, lively Zumba classes, and expert guidance from certified trainers, ensuring you reach your fitness aspirations. Embrace a transformative fitness journey by joining us today and unlock a new level of wellness and vitality!"
+          content="Discover your potential and sculpt the body of your dreams at A8 Tiger Fitness Gym. Our tailored approach to fitness includes personalized training, invigorating yoga, lively Zumba classes, and expert guidance from certified trainers, ensuring you reach your fitness aspirations. Embrace a transformative fitness journey by joining us today and unlock a new level of wellness and vitality!"
         />
         <meta
           name="keywords"
-          content="Arms8 Gym in Santacruz offers tailored fitness solutions, including personalized training led by professional trainers to help you achieve your fitness goals. Explore our various membership plans for a fulfilling fitness journey at Arms8, your dedicated arm gym in the area. Join our gym today to experience personalized fitness programs, expert guidance, and exclusive membership benefits."
+          content="A8 Tiger Fitness Gym in Santacruz offers tailored fitness solutions, including personalized training led by professional trainers to help you achieve your fitness goals. Explore our various membership plans for a fulfilling fitness journey at A8 Tiger Fitness, your dedicated arm gym in the area. Join our gym today to experience personalized fitness programs, expert guidance, and exclusive membership benefits."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -48,7 +48,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-start gap-10 child:font-semibold text-gray-800 px-4">
               <button
                 onClick={() => {
-                  setLocalArms8("Santacruz");
+                  setLocalA8TigerFitness8("Santacruz");
                   setModal(false);
                 }}
                 aria-label="Santacruz"
@@ -57,7 +57,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  setLocalArms8("Ville Parle");
+                  setLocalA8TigerFitness8("Ville Parle");
                   setModal(false);
                 }}
                 aria-label="Ville Parle"
@@ -66,7 +66,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  setLocalArms8("Andheri");
+                  setLocalA8TigerFitness8("Andheri");
                   setModal(false);
                 }}
                 aria-label="Andheri"
@@ -198,7 +198,7 @@ export default function Home() {
 
                 <div className="flex gap-5">
                   <a
-                    href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
+                    href="https://www.facebook.com/people/A8TigerFitness-8-GYM/100093163308833/?mibextid=ZbWKwL"
                     target="_blank"
                     aria-label="Facebook Logo"
                   >
@@ -210,7 +210,7 @@ export default function Home() {
                     />
                   </a>
                   <a
-                    href="https://www.instagram.com/arms8gym/"
+                    href="https://www.instagram.com/a8tigerfitness/"
                     target="_blank"
                     aria-label="Instagram Logo"
                   >
@@ -232,7 +232,7 @@ export default function Home() {
               Closest Location
             </div>
             <div className="text-lg sm:text-2xl pt-2 pb-4 tracking-[.1em] font-semibold">
-              Your Local Arms8 Gym&nbsp;
+              Your Local A8 Tiger Fitness Gym&nbsp;
               <span>
                 <a
                   href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
@@ -244,18 +244,18 @@ export default function Home() {
                 <button
                   className="hover:tracking-[.15em] transition-all duration-300"
                   role={"button"}
-                  aria-label={"Local Arms8 Gym Selector"}
+                  aria-label={"Local A8 Tiger Fitness Gym Selector"}
                   onClick={() => {
                     setModal(true);
                   }}
                 >
-                  {localArms8}
+                  {localA8TigerFitness8}
                 </button>
                 &nbsp;
                 <button
                   className="uppercase text-xs"
                   role="button"
-                  aria-label="Change Local Arms8 Location"
+                  aria-label="Change Local A8 Tiger Fitness Location"
                   onClick={() => {
                     setModal(true);
                   }}
@@ -269,7 +269,7 @@ export default function Home() {
                 <button
                   className="w-52 h-14 bg-white uppercase text-yellow-700 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
                   role="button"
-                  aria-label="View information about your local Arms8 Gym"
+                  aria-label="View information about your local A8 Tiger Fitness Gym"
                 >
                   Get Details
                 </button>

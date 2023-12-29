@@ -44,7 +44,7 @@ export function Navbar({ solid }) {
           role="button"
           aria-label="Home Button"
           tabIndex={0}
-          className="relative"
+          className="relative my-2"
           onClick={() => {
             window.location.assign("/");
           }}
@@ -52,9 +52,9 @@ export function Navbar({ solid }) {
           <Image
             className="object-contain"
             src="/images/logos/logo.webp"
-            alt="Arms8 Gym Logo"
-            height={90}
-            width={90}
+            alt="A8 Tiger Fitness Gym Logo"
+            height={60}
+            width={60}
             loading="lazy"
           />
         </button>
