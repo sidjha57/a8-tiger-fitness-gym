@@ -14,7 +14,7 @@ export default function Services() {
         <title>{title}</title>
         <meta
           name="description"
-          content="Various pricing options available with being a Member of Arms8 Gym. Whether you're new to the gym or an experienced lifter we have a plan that fits your needs."
+          content="Various pricing options available with being a Member of A8 Tiger Fitness Gym. Whether you're new to the gym or an experienced lifter we have a plan that fits your needs."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

@@ -44,17 +44,17 @@ export function Navbar({ solid }) {
           role="button"
           aria-label="Home Button"
           tabIndex={0}
-          className="h-16 w-36 relative"
+          className="relative my-2"
           onClick={() => {
             window.location.assign("/");
           }}
         >
           <Image
             className="object-contain"
-            src="/images/logo.webp"
-            alt="Arms8 Gym Logo"
-            height={75}
-            width={75}
+            src="/images/logos/logo.webp"
+            alt="A8 Tiger Fitness Gym Logo"
+            height={60}
+            width={60}
             loading="lazy"
           />
         </button>
@@ -75,15 +75,15 @@ export function Navbar({ solid }) {
           <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]"
           onClick={() => {window.location.assign("/pricing")}}
           role="button"
-          aria-label="Pricing Page Navigate Button">
-            Pricing
+          aria-label="Membership Plans Page Navigate Button">
+            Membership Plans
           </button>
-          <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]"
+          {/* <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]"
           onClick={() => {window.location.assign("/shop")}}
           role="button"
           aria-label="Shop Page Navigate Button">
           Shop
-          </button>
+          </button> */}
           <button className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]"
           onClick={() => {window.location.assign("/contact")}}
           role="button"
@@ -122,9 +122,9 @@ export function Navbar({ solid }) {
           <button aria-label="Pricing" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/pricing">Pricing</Link>
           </button>
-          <button aria-label="Shop" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
+          {/* <button aria-label="Shop" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/shop">Shop</Link>
-          </button>
+          </button> */}
           <button aria-label="Contact" className="hover:text-white hover:border-b-2 border-orange-600 transition-all duration-50 [text-shadow:_0_1px_1px_rgb(0_0_0_/_100%)]">
             <Link href="/contact">Contact</Link>
           </button>

@@ -4,7 +4,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
   return (
     <div
       id="price-card-1"
-      className="h-[600px] w-[400px]  bg-white border flex-col"
+      className="h-[450px] w-[400px]  bg-white border flex-col"
     >
       <div
         id={"price-card-head" + tier}
@@ -44,11 +44,11 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
           >
             {title}
           </div>
-          <div className="flex justify-center relative left-2">
+          {/* <div className="flex justify-center relative left-2">
             <div className="font-medium text-[2em]">&#8377;</div>
             <div className="text-black font-semibold text-[3em]">{price}</div>
             <div className="font-medium text-[1em] relative top-8">/Month</div>
-          </div>
+          </div> */}
           <ul className="leading-[2em] text-lg">
             <li>Monthly Free Training Session</li>
             <li>General Gym Access</li>
@@ -58,7 +58,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
           </ul>
         </div>
       </div>
-      <div className="h-[150px] flex justify-center items-center">
+      {/* <div className="h-[150px] flex justify-center items-center">
         <button
           aria-label="Purchase Button"
           id={"price-btn-" + tier}
@@ -66,7 +66,7 @@ export function PriceCard({ title, price, features, thumbnail, tier }) {
         >
           Purchase Now
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

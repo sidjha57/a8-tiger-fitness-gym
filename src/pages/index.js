@@ -11,19 +11,21 @@ import { PriceCard } from "@/components/PriceCards";
 import { Footer } from "@/components/PageFooter";
 
 export default function Home() {
-  const [localArms8, setLocalArms8] = useState("Santacruz");
+  const [localA8TigerFitness8, setLocalA8TigerFitness8] = useState("Santacruz");
   const [modal, setModal] = useState(true);
+  const [termsModal, setTermsModal] = useState(false);
+
   return (
     <>
       <Head>
-        <title>Arms8 Gym</title>
+        <title>A8 Tiger Fitness Gym: Premier Santacruz Fitness Destination.</title>
         <meta
           name="description"
-          content="Unlock your greatness and forge the body you want at Arms8 Gym. We offer personalized training, yoga, zumba and professional trainers to help you achieve your fitness goals. Join now and experience a game-changing fitness journey!"
+          content="Discover your potential and sculpt the body of your dreams at A8 Tiger Fitness Gym. Our tailored approach to fitness includes personalized training, invigorating yoga, lively Zumba classes, and expert guidance from certified trainers, ensuring you reach your fitness aspirations. Embrace a transformative fitness journey by joining us today and unlock a new level of wellness and vitality!"
         />
         <meta
           name="keywords"
-          content="Arms8 Gym, gym, fitness, personalized training, juice bar, sauna, spa, professional trainers, fitness goals, membership plans, gym membership, fitness journey"
+          content="A8 Tiger Fitness Gym in Santacruz offers tailored fitness solutions, including personalized training led by professional trainers to help you achieve your fitness goals. Explore our various membership plans for a fulfilling fitness journey at A8 Tiger Fitness, your dedicated arm gym in the area. Join our gym today to experience personalized fitness programs, expert guidance, and exclusive membership benefits."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -46,7 +48,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-start gap-10 child:font-semibold text-gray-800 px-4">
               <button
                 onClick={() => {
-                  setLocalArms8("Santacruz");
+                  setLocalA8TigerFitness8("Santacruz");
                   setModal(false);
                 }}
                 aria-label="Santacruz"
@@ -55,7 +57,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  setLocalArms8("Ville Parle");
+                  setLocalA8TigerFitness8("Ville Parle");
                   setModal(false);
                 }}
                 aria-label="Ville Parle"
@@ -64,7 +66,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  setLocalArms8("Andheri");
+                  setLocalA8TigerFitness8("Andheri");
                   setModal(false);
                 }}
                 aria-label="Andheri"
@@ -86,11 +88,65 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <dialog
+        id="policy"
+        className={`${
+          termsModal ? "fixed" : "hidden"
+        } w-screen h-screen bg-black/50 z-50 overflow-y-hidden flex justify-center items-center `}
+      >
+        <div className="w-[300px] h-[420px] sm:w-[600px] sm:h-[280px] bg-white rounded-md flex flex-col  items-center gap-4 leading-5 overflow-hidden">
+          <div className="w-full h-[40px] py-2 px-4 border-b-2">
+            <div className="leading-6 ">
+              <div className="text-[1.2em] text-gray-900 font-medium">
+                Privacy Policy
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <div className="flex flex-wrap justify-start gap-2 pr-4 text-gray-800 px-6">
+              <li>
+                <strong>Environment: </strong> 
+                We prioritize a safe, clean, and enjoyable setting.
+              </li>
+              <li>
+              <strong>Conduct: </strong>
+                Expect respectful behavior, no disrespect tolerated.
+              </li>
+              <li>
+                <strong>Prohibitions: </strong>
+                 No smoking, drugs, gum, or food allowed.</li>
+              <li>
+              <strong>Child Policy: </strong>
+                 Children under 14 need parental supervision.
+              </li>
+              <li>
+              <strong>Check-In: </strong>
+                 Members must punch in when entering the gym.</li>
+              <li>
+              <strong>Valuables: </strong>
+                Avoid bringing valuables; we&apos;re not liable for
+                losses.
+              </li>
+            </div>
+          </div>
+          <div className="w-full h-[50px] bg-gray-200 flex justify-end items-center">
+            <button
+              className="bg-white border-2 border-yellow-500 h-[40px] w-[60px] mx-4 text-black transition-all duration-100 hover:bg-yellow-500 hover:text-white hover:h-[50px] hover:w-[65px]"
+              onClick={() => 
+                setTermsModal(false)
+              }
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </dialog>
       <main className="bg-black w-screen">
         <Navbar />
         <CallOption />
         <div className="flex justify-center items-center mx-auto">
-          <div className="h-[85vh] overflow-hidden z-0 bg-[url('/images/landing.webp')] bg-cover bg-no-repeat w-screen">
+        <div className="h-[85vh] overflow-hidden z-0 bg-[url('/images/landing.webp')] bg-cover bg-no-repeat w-screen">
             <div
               name="bgChild"
               className="relative flex flex-col justify-center items-center sm:items-end text-left  w-full h-full pr-12"
@@ -142,7 +198,7 @@ export default function Home() {
 
                 <div className="flex gap-5">
                   <a
-                    href="https://www.facebook.com/people/ARMS-8-GYM/100093163308833/?mibextid=ZbWKwL"
+                    href="https://www.facebook.com/people/A8TigerFitness-8-GYM/100093163308833/?mibextid=ZbWKwL"
                     target="_blank"
                     aria-label="Facebook Logo"
                   >
@@ -153,7 +209,9 @@ export default function Home() {
                       alt="Facebook logo"
                     />
                   </a>
-                  <a href="https://www.instagram.com/arms8gym/" target="_blank"
+                  <a
+                    href="https://www.instagram.com/a8tigerfitness/"
+                    target="_blank"
                     aria-label="Instagram Logo"
                   >
                     <Image
@@ -174,7 +232,7 @@ export default function Home() {
               Closest Location
             </div>
             <div className="text-lg sm:text-2xl pt-2 pb-4 tracking-[.1em] font-semibold">
-              Your Local Arms8 Gym&nbsp;
+              Your Local A8 Tiger Fitness Gym&nbsp;
               <span>
                 <a
                   href="https://maps.app.goo.gl/z5C1UAVWyvxy2HGP9"
@@ -186,18 +244,18 @@ export default function Home() {
                 <button
                   className="hover:tracking-[.15em] transition-all duration-300"
                   role={"button"}
-                  aria-label={"Local Arms8 Gym Selector"}
+                  aria-label={"Local A8 Tiger Fitness Gym Selector"}
                   onClick={() => {
                     setModal(true);
                   }}
                 >
-                  {localArms8}
+                  {localA8TigerFitness8}
                 </button>
                 &nbsp;
                 <button
                   className="uppercase text-xs"
                   role="button"
-                  aria-label="Change Local Arms8 Location"
+                  aria-label="Change Local A8 Tiger Fitness Location"
                   onClick={() => {
                     setModal(true);
                   }}
@@ -211,7 +269,7 @@ export default function Home() {
                 <button
                   className="w-52 h-14 bg-white uppercase text-yellow-700 tracking-[.2em] hover:tracking-[.1em] transition-all duration-300"
                   role="button"
-                  aria-label="View information about your local Arms8 Gym"
+                  aria-label="View information about your local A8 Tiger Fitness Gym"
                 >
                   Get Details
                 </button>
@@ -330,8 +388,8 @@ export default function Home() {
               <div className="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-orange-600"></div>
             </span>
           </div>
-              <Testimonial />
-         
+          <Testimonial />
+
           <div className="text-black  text-center text-xl mt-10 mb-10 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold underline">
             Brands We Work With
           </div>
@@ -381,7 +439,7 @@ export default function Home() {
             <span>
               <div className="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-orange-600"></div>
             </span>
-            Pricing
+            Membership Plans
             <span>
               <div className="w-8 h-[2px] bg-gradient-to-r from-yellow-500 to-orange-600"></div>
             </span>
@@ -413,7 +471,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer setTermsModal={setTermsModal} />
     </>
   );
 }

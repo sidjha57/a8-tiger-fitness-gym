@@ -12,7 +12,7 @@ export default function Pricing() {
         <title>{title}</title>
         <meta
           name="description"
-          content="This is the story of Arms8 Gym, from humble beginnings to where we are today!"
+          content="This is the story of A8 Tiger Fitness Gym, from humble beginnings to where we are today!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -47,7 +47,7 @@ export default function Pricing() {
                 Our Story
               </h2>
               <div className="indent-[2rem] font-medium sm:text-[1.5rem] sm:leading-10">
-                Arms 8 Gym is the premier place to get in shape in the heart of
+                A8 Tiger Fitness Gym is the premier place to get in shape in the heart of
                 the city. Our state-of-the-art facility is kept impeccably clean
                 and hygienic, and we offer a wide range of international branded
                 equipments to help you reach your fitness goals. We also have
@@ -61,7 +61,7 @@ export default function Pricing() {
                 Our Vision
               </h3>{" "}
               <div className="indent-[2rem] font-medium sm:text-[1.5rem] sm:leading-10">
-                Arms8 Gym envisions a world where fitness is not just a goal but
+                A8 Tiger Fitness Gym envisions a world where fitness is not just a goal but
                 a lifestyle. We believe in the power of fitness to transform
                 lives, inspire change, and create a positive impact. Our vision
                 guides us in everything we do, from designing our gym facilities

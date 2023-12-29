@@ -51,3 +51,6 @@ img {
   object-fit: cover;
 }
 
+dialog::backdrop {
+  background-color: rgba(118, 118, 119, 0.388);
+}
