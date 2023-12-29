@@ -12,7 +12,7 @@ import { Footer } from "@/components/PageFooter";
 
 export default function Home() {
   const [localA8TigerFitness8, setLocalA8TigerFitness8] = useState("Santacruz");
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [termsModal, setTermsModal] = useState(false);
 
   return (
@@ -326,7 +326,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="bg-white flex flex-col">
+        {/* <div className="bg-white flex flex-col">
           <div className="bg-[url('/images/18410.webp')] bg-cover h-max bg-opacity-10 py-8">
             <div className="text-black  text-center text-2xl mt-10 mb-2.5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold">
               <span>
@@ -377,7 +377,7 @@ export default function Home() {
 
             <div></div>
           </div>
-        </div>
+        </div> */}
         <div className="bg-white flex flex-col py-8 items-center border-b-2">
           <div className="text-black  text-center text-2xl mt-10 mb-5 tracking-[.1em] uppercase flex justify-center items-center gap-2 font-semibold">
             <span>
